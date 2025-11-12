@@ -1,14 +1,14 @@
 # UnRAR Browser
 
 [![npm version](https://img.shields.io/npm/v/@unrar-browser/core.svg)](https://www.npmjs.com/package/@unrar-browser/core)
-[![CI](https://github.com/DavidKk/unrar-browser-wasm/workflows/CI/badge.svg)](https://github.com/DavidKk/unrar-browser-wasm/actions)
+[![build](https://github.com/DavidKk/unrar-browser-wasm/actions/workflows/build.workflow.yml/badge.svg?branch=main)](https://github.com/DavidKk/unrar-browser-wasm/actions/workflows/build.workflow.yml)
 [![License](https://img.shields.io/npm/l/@unrar-browser/core.svg)](LICENSE)
 
 > 🎯 在浏览器中解压 RAR 文件的 WebAssembly 库
 
 将 UnRAR 编译为 WebAssembly，让你可以在浏览器中直接解压 RAR 文件，无需服务器支持。
 
-[English](./README.md) | 简体中文
+**🌐 [在线演示](https://davidkk.github.io/unrar-browser-wasm/)** | [English](./README.md) | 简体中文
 
 ## ✨ 特性
 
@@ -361,6 +361,7 @@ MIT License
 
 ## 🔗 链接
 
+- [在线演示](https://davidkk.github.io/unrar-browser-wasm/) - 在线试用
 - [npm 包](https://www.npmjs.com/package/@unrar-browser/core)
 - [GitHub 仓库](https://github.com/DavidKk/unrar-browser-wasm)
 - [问题反馈](https://github.com/DavidKk/unrar-browser-wasm/issues)

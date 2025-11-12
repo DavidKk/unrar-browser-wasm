@@ -5,7 +5,7 @@
   "scripts": {
     "commit": "git-cz",
     "ci:pages": "shx rm -rf ./gh-pages && shx mkdir -p ./gh-pages && pnpm build && pnpm build:demo && shx cp -r packages/demo/dist/* ./gh-pages/",
-    "ci:coverage": "pnpm build && pnpm test:e2e",
+    "ci:coverage": "pnpm build && pnpm test:e2e --project=chromium",
     "ci:build": "pnpm build",
     "postinstall": "node --experimental-modules ./scripts/postinstall.mjs",
     "preinstall": "node --experimental-modules ./scripts/preinstall.mjs",
