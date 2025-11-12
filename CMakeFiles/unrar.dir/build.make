@@ -77,690 +77,690 @@ CMakeFiles/unrar.dir/src/unrar.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/src/unrar.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/src/unrar.cpp
 CMakeFiles/unrar.dir/src/unrar.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/unrar.dir/src/unrar.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/src/unrar.cpp.o -MF CMakeFiles/unrar.dir/src/unrar.cpp.o.d -o CMakeFiles/unrar.dir/src/unrar.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/src/unrar.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/src/unrar.cpp.o -MF CMakeFiles/unrar.dir/src/unrar.cpp.o.d -o CMakeFiles/unrar.dir/src/unrar.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/src/unrar.cpp
 
 CMakeFiles/unrar.dir/src/unrar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/src/unrar.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/src/unrar.cpp > CMakeFiles/unrar.dir/src/unrar.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/src/unrar.cpp > CMakeFiles/unrar.dir/src/unrar.cpp.i
 
 CMakeFiles/unrar.dir/src/unrar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/src/unrar.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/src/unrar.cpp -o CMakeFiles/unrar.dir/src/unrar.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/src/unrar.cpp -o CMakeFiles/unrar.dir/src/unrar.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rar.cpp
 CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rar.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rar.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rar.cpp > CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rar.cpp > CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rar.cpp -o CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rar.cpp -o CMakeFiles/unrar.dir/vendor/unrar/rar.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/strlist.cpp
 CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/strlist.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/strlist.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/strlist.cpp > CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/strlist.cpp > CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/strlist.cpp -o CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/strlist.cpp -o CMakeFiles/unrar.dir/vendor/unrar/strlist.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/strfn.cpp
 CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/strfn.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/strfn.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/strfn.cpp > CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/strfn.cpp > CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/strfn.cpp -o CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/strfn.cpp -o CMakeFiles/unrar.dir/vendor/unrar/strfn.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/pathfn.cpp
 CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/pathfn.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/pathfn.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/pathfn.cpp > CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/pathfn.cpp > CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/pathfn.cpp -o CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/pathfn.cpp -o CMakeFiles/unrar.dir/vendor/unrar/pathfn.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/smallfn.cpp
 CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/smallfn.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/smallfn.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/smallfn.cpp > CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/smallfn.cpp > CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/smallfn.cpp -o CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/smallfn.cpp -o CMakeFiles/unrar.dir/vendor/unrar/smallfn.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/global.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/global.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/global.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/global.cpp
 CMakeFiles/unrar.dir/vendor/unrar/global.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/global.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/global.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/global.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/global.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/global.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/global.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/global.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/global.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/global.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/global.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/global.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/global.cpp > CMakeFiles/unrar.dir/vendor/unrar/global.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/global.cpp > CMakeFiles/unrar.dir/vendor/unrar/global.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/global.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/global.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/global.cpp -o CMakeFiles/unrar.dir/vendor/unrar/global.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/global.cpp -o CMakeFiles/unrar.dir/vendor/unrar/global.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/file.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/file.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/file.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/file.cpp
 CMakeFiles/unrar.dir/vendor/unrar/file.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/file.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/file.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/file.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/file.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/file.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/file.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/file.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/file.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/file.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/file.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/file.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/file.cpp > CMakeFiles/unrar.dir/vendor/unrar/file.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/file.cpp > CMakeFiles/unrar.dir/vendor/unrar/file.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/file.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/file.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/file.cpp -o CMakeFiles/unrar.dir/vendor/unrar/file.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/file.cpp -o CMakeFiles/unrar.dir/vendor/unrar/file.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filefn.cpp
 CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filefn.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filefn.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filefn.cpp > CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filefn.cpp > CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filefn.cpp -o CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filefn.cpp -o CMakeFiles/unrar.dir/vendor/unrar/filefn.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filcreat.cpp
 CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filcreat.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filcreat.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filcreat.cpp > CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filcreat.cpp > CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filcreat.cpp -o CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filcreat.cpp -o CMakeFiles/unrar.dir/vendor/unrar/filcreat.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/archive.cpp
 CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/archive.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/archive.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/archive.cpp > CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/archive.cpp > CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/archive.cpp -o CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/archive.cpp -o CMakeFiles/unrar.dir/vendor/unrar/archive.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/arcread.cpp
 CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/arcread.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/arcread.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/arcread.cpp > CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/arcread.cpp > CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/arcread.cpp -o CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/arcread.cpp -o CMakeFiles/unrar.dir/vendor/unrar/arcread.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/unicode.cpp
 CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/unicode.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/unicode.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/unicode.cpp > CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/unicode.cpp > CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/unicode.cpp -o CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/unicode.cpp -o CMakeFiles/unrar.dir/vendor/unrar/unicode.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/system.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/system.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/system.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/system.cpp
 CMakeFiles/unrar.dir/vendor/unrar/system.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/system.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/system.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/system.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/system.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/system.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/system.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/system.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/system.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/system.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/system.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/system.cpp > CMakeFiles/unrar.dir/vendor/unrar/system.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/system.cpp > CMakeFiles/unrar.dir/vendor/unrar/system.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/system.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/system.cpp -o CMakeFiles/unrar.dir/vendor/unrar/system.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/system.cpp -o CMakeFiles/unrar.dir/vendor/unrar/system.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rawread.cpp
 CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rawread.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rawread.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rawread.cpp > CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rawread.cpp > CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rawread.cpp -o CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rawread.cpp -o CMakeFiles/unrar.dir/vendor/unrar/rawread.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/encname.cpp
 CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/encname.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/encname.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/encname.cpp > CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/encname.cpp > CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/encname.cpp -o CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/encname.cpp -o CMakeFiles/unrar.dir/vendor/unrar/encname.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/resource.cpp
 CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/resource.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/resource.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/resource.cpp > CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/resource.cpp > CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/resource.cpp -o CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/resource.cpp -o CMakeFiles/unrar.dir/vendor/unrar/resource.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/match.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/match.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/match.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/match.cpp
 CMakeFiles/unrar.dir/vendor/unrar/match.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/match.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/match.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/match.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/match.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/match.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/match.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/match.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/match.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/match.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/match.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/match.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/match.cpp > CMakeFiles/unrar.dir/vendor/unrar/match.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/match.cpp > CMakeFiles/unrar.dir/vendor/unrar/match.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/match.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/match.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/match.cpp -o CMakeFiles/unrar.dir/vendor/unrar/match.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/match.cpp -o CMakeFiles/unrar.dir/vendor/unrar/match.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/timefn.cpp
 CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/timefn.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/timefn.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/timefn.cpp > CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/timefn.cpp > CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/timefn.cpp -o CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/timefn.cpp -o CMakeFiles/unrar.dir/vendor/unrar/timefn.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rdwrfn.cpp
 CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rdwrfn.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rdwrfn.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rdwrfn.cpp > CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rdwrfn.cpp > CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rdwrfn.cpp -o CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rdwrfn.cpp -o CMakeFiles/unrar.dir/vendor/unrar/rdwrfn.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/options.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/options.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/options.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/options.cpp
 CMakeFiles/unrar.dir/vendor/unrar/options.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/options.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/options.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/options.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/options.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/options.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/options.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/options.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/options.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/options.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/options.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/options.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/options.cpp > CMakeFiles/unrar.dir/vendor/unrar/options.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/options.cpp > CMakeFiles/unrar.dir/vendor/unrar/options.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/options.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/options.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/options.cpp -o CMakeFiles/unrar.dir/vendor/unrar/options.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/options.cpp -o CMakeFiles/unrar.dir/vendor/unrar/options.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/errhnd.cpp
 CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/errhnd.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/errhnd.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/errhnd.cpp > CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/errhnd.cpp > CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/errhnd.cpp -o CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/errhnd.cpp -o CMakeFiles/unrar.dir/vendor/unrar/errhnd.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rarvm.cpp
 CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rarvm.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rarvm.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rarvm.cpp > CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rarvm.cpp > CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rarvm.cpp -o CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/rarvm.cpp -o CMakeFiles/unrar.dir/vendor/unrar/rarvm.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/secpassword.cpp
 CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/secpassword.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/secpassword.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/secpassword.cpp > CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/secpassword.cpp > CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/secpassword.cpp -o CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/secpassword.cpp -o CMakeFiles/unrar.dir/vendor/unrar/secpassword.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/getbits.cpp
 CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/getbits.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/getbits.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/getbits.cpp > CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/getbits.cpp > CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/getbits.cpp -o CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/getbits.cpp -o CMakeFiles/unrar.dir/vendor/unrar/getbits.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/sha1.cpp
 CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/sha1.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/sha1.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/sha1.cpp > CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/sha1.cpp > CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/sha1.cpp -o CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/sha1.cpp -o CMakeFiles/unrar.dir/vendor/unrar/sha1.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/sha256.cpp
 CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/sha256.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/sha256.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/sha256.cpp > CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/sha256.cpp > CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/sha256.cpp -o CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/sha256.cpp -o CMakeFiles/unrar.dir/vendor/unrar/sha256.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/blake2s.cpp
 CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/blake2s.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/blake2s.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/blake2s.cpp > CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/blake2s.cpp > CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/blake2s.cpp -o CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/blake2s.cpp -o CMakeFiles/unrar.dir/vendor/unrar/blake2s.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/hash.cpp
 CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/hash.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/hash.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/hash.cpp > CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/hash.cpp > CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/hash.cpp -o CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/hash.cpp -o CMakeFiles/unrar.dir/vendor/unrar/hash.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/extinfo.cpp
 CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/extinfo.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/extinfo.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/extinfo.cpp > CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/extinfo.cpp > CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/extinfo.cpp -o CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/extinfo.cpp -o CMakeFiles/unrar.dir/vendor/unrar/extinfo.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/extract.cpp
 CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/extract.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/extract.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/extract.cpp > CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/extract.cpp > CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/extract.cpp -o CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/extract.cpp -o CMakeFiles/unrar.dir/vendor/unrar/extract.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/volume.cpp
 CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/volume.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/volume.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/volume.cpp > CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/volume.cpp > CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/volume.cpp -o CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/volume.cpp -o CMakeFiles/unrar.dir/vendor/unrar/volume.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/list.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/list.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/list.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/list.cpp
 CMakeFiles/unrar.dir/vendor/unrar/list.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/list.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/list.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/list.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/list.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/list.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/list.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/list.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/list.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/list.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/list.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/list.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/list.cpp > CMakeFiles/unrar.dir/vendor/unrar/list.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/list.cpp > CMakeFiles/unrar.dir/vendor/unrar/list.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/list.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/list.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/list.cpp -o CMakeFiles/unrar.dir/vendor/unrar/list.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/list.cpp -o CMakeFiles/unrar.dir/vendor/unrar/list.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/find.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/find.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/find.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/find.cpp
 CMakeFiles/unrar.dir/vendor/unrar/find.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/find.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/find.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/find.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/find.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/find.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/find.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/find.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/find.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/find.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/find.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/find.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/find.cpp > CMakeFiles/unrar.dir/vendor/unrar/find.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/find.cpp > CMakeFiles/unrar.dir/vendor/unrar/find.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/find.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/find.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/find.cpp -o CMakeFiles/unrar.dir/vendor/unrar/find.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/find.cpp -o CMakeFiles/unrar.dir/vendor/unrar/find.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/unpack.cpp
 CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/unpack.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/unpack.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/unpack.cpp > CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/unpack.cpp > CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/unpack.cpp -o CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/unpack.cpp -o CMakeFiles/unrar.dir/vendor/unrar/unpack.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/cmddata.cpp
 CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/cmddata.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/cmddata.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/cmddata.cpp > CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/cmddata.cpp > CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/cmddata.cpp -o CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/cmddata.cpp -o CMakeFiles/unrar.dir/vendor/unrar/cmddata.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/dll.cpp
 CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/dll.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/dll.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/dll.cpp > CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/dll.cpp > CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/dll.cpp -o CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/dll.cpp -o CMakeFiles/unrar.dir/vendor/unrar/dll.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/crypt.cpp
 CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/crypt.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/crypt.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/crypt.cpp > CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/crypt.cpp > CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/crypt.cpp -o CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/crypt.cpp -o CMakeFiles/unrar.dir/vendor/unrar/crypt.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filestr.cpp
 CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filestr.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filestr.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filestr.cpp > CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filestr.cpp > CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filestr.cpp -o CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/filestr.cpp -o CMakeFiles/unrar.dir/vendor/unrar/filestr.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/threadpool.cpp
 CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/threadpool.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/threadpool.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/threadpool.cpp > CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/threadpool.cpp > CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/threadpool.cpp -o CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/threadpool.cpp -o CMakeFiles/unrar.dir/vendor/unrar/threadpool.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/largepage.cpp
 CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/largepage.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/largepage.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/largepage.cpp > CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/largepage.cpp > CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/largepage.cpp -o CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/largepage.cpp -o CMakeFiles/unrar.dir/vendor/unrar/largepage.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/qopen.cpp
 CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/qopen.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/qopen.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/qopen.cpp > CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/qopen.cpp > CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/qopen.cpp -o CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/qopen.cpp -o CMakeFiles/unrar.dir/vendor/unrar/qopen.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/consio.cpp
 CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/consio.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/consio.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/consio.cpp > CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/consio.cpp > CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/consio.cpp -o CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/consio.cpp -o CMakeFiles/unrar.dir/vendor/unrar/consio.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/ui.cpp
 CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/ui.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/ui.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/ui.cpp > CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/ui.cpp > CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/ui.cpp -o CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/ui.cpp -o CMakeFiles/unrar.dir/vendor/unrar/ui.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/crc.cpp
 CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/crc.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/crc.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/crc.cpp > CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/crc.cpp > CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/crc.cpp -o CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/crc.cpp -o CMakeFiles/unrar.dir/vendor/unrar/crc.cpp.s
 
 CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.o: CMakeFiles/unrar.dir/flags.make
 CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.o: CMakeFiles/unrar.dir/includes_CXX.rsp
 CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.o: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/headers.cpp
 CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.o: CMakeFiles/unrar.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.o"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/headers.cpp
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.o -MF CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.o.d -o CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.o -c /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/headers.cpp
 
 CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.i"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/headers.cpp > CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.i
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/headers.cpp > CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.i
 
 CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.s"
-	/Users/runner/work/_temp/cca666fa-fd28-4ff9-a69f-41017d27c454/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/headers.cpp -o CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.s
+	/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/vendor/unrar/headers.cpp -o CMakeFiles/unrar.dir/vendor/unrar/headers.cpp.s
 
 # Object files for target unrar
 unrar_OBJECTS = \
