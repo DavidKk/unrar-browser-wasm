@@ -1,0 +1,3 @@
+/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles/unrar.dir
+/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles/edit_cache.dir
+/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/CMakeFiles/rebuild_cache.dir
