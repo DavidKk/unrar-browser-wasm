@@ -8,7 +8,113 @@ on:
     tags-ignore:
       - '**'
 
+env:
+  # 默认分支
+  CI_DEFAULT_BRANCH: main
+  # 产物文件名称
+  CI_COVERAGE_ARTIFACT_FILE: coverage-${{ github.sha }}
+
 jobs:
-  npm:
-    uses: dumlj/dumlj-workflows/.github/workflows/npm.workflow.yml@main
-    secrets: inherit
+  # 前置任务
+  pre:
+    runs-on: ubuntu-latest
+    outputs:
+      # OS 列表
+      os_list: ${{ steps.set-variables.outputs.os_list }}
+      # 是否需要发布
+      should_release: ${{ steps.set-variables.outputs.should_release }}
+    steps:
+      - name: Set variables
+        id: set-variables
+        run: |
+          # 只有主分支需要验证所有平台
+          if [[ "${{ github.ref_name }}" == "main" ]]; then
+            echo "os_list=[\"macOS-latest\", \"ubuntu-latest\", \"windows-latest\"]" >> $GITHUB_OUTPUT
+          else
+            echo "os_list=[\"macOS-latest\"]" >> $GITHUB_OUTPUT
+          fi
+
+          # 根据分支确认是否需要发布
+          if [[ "${{ github.ref_name }}" =~ ^(main|alpha|beta)$ ]]; then
+            echo "should_release=1" >> $GITHUB_OUTPUT
+          fi
+  # 测试任务
+  test:
+    name: test#node-${{ matrix.node_version }}#${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    needs: [pre]
+    strategy:
+      matrix:
+        node_version: ['20']
+        os: ${{ fromJson(needs.pre.outputs.os_list) }}
+    steps:
+      # 初始化
+      - name: Initialize project
+        uses: dumlj/dumlj-workflows/.github/actions/setup.node@main
+        with:
+          node_version: ${{ matrix.node_version }}
+          git_access_token: ${{ secrets.CI_GIT_TOKEN }}
+      # 扩展：安装 Emscripten (用于构建 WASM)
+      - name: Setup Emscripten
+        uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: 'latest'
+      # 测试/覆盖率
+      - name: Run tests and collect coverage
+        uses: dumlj/dumlj-workflows/.github/actions/coverage.node@main
+        if: ${{ matrix.node_version == '20' }}
+        with:
+          artifact_name: $CI_COVERAGE_ARTIFACT_FILE
+          codecov_token: ${{ secrets.CODECOV_TOKEN }}
+  # 发布任务
+  release:
+    name: release
+    if: ${{ needs.pre.outputs.should_release == '1' }}
+    needs: [pre, test]
+    runs-on: ubuntu-latest
+    steps:
+      # 初始化
+      - name: Initialize projects
+        uses: dumlj/dumlj-workflows/.github/actions/setup.node@main
+        with:
+          git_access_token: ${{ secrets.CI_GIT_TOKEN }}
+      # 扩展：安装 Emscripten (用于构建 WASM)
+      - name: Setup Emscripten
+        uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: 'latest'
+      # 登录 npm
+      - name: Login NPM
+        uses: dumlj/dumlj-workflows/.github/actions/npm-login.node@main
+        with:
+          token: ${{ secrets.CI_NPM_AUTH_TOKEN }}
+      # 发布
+      - name: Release to NPM
+        uses: dumlj/dumlj-workflows/.github/actions/npm-deploy.node@main
+        with:
+          default_branch: $CI_DEFAULT_BRANCH
+  # 发布 Github Pages
+  gh-page:
+    name: gh-page
+    needs: [release]
+    if: ${{ github.ref_type == 'branch' && github.ref_name == 'main' }}
+    runs-on: ubuntu-latest
+    steps:
+      # 初始化（使用外部 action）
+      - name: Setup Node.js (Base)
+        uses: dumlj/dumlj-workflows/.github/actions/setup.node@main
+        with:
+          node_version: '20'
+          git_access_token: ${{ secrets.CI_GIT_TOKEN }}
+      # 扩展：安装 Emscripten (用于构建 WASM)
+      - name: Setup Emscripten
+        uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: 'latest'
+      # 发布
+      - name: Deploy to github page
+        uses: dumlj/dumlj-workflows/.github/actions/gh-page.node@main
+        with:
+          git_access_token: ${{ secrets.CI_GIT_TOKEN }}
+          codecov_token: ${{ secrets.CODECOV_TOKEN }}
+          artifact_name: ${{ env.CI_COVERAGE_ARTIFACT_FILE }}

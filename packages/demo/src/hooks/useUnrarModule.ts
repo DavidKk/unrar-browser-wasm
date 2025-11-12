@@ -46,7 +46,9 @@ export function useUnrarModule(): UseUnrarModuleResult {
           }
         }, 200)
 
-        const loadedModule = await getUnrarModule()
+        // 从 Vite 环境变量获取 base URL（在 CI 环境中为 '/unrar.js/'）
+        const basePath = import.meta.env.BASE_URL || '/'
+        const loadedModule = await getUnrarModule(basePath)
 
         if (progressInterval) {
           clearInterval(progressInterval)

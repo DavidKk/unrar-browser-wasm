@@ -2,7 +2,30 @@ name: gh-pages
 
 on: [workflow_dispatch]
 
+env:
+  # 默认分支
+  CI_DEFAULT_BRANCH: main
+
 jobs:
+  # 发布 Github Pages
   gh-pages:
-    uses: dumlj/dumlj-workflows/.github/workflows/gh-pages.workflow.yml@main
-    secrets: inherit
+    name: gh-pages
+    runs-on: macOS-latest
+    steps:
+      # 初始化（使用外部 action）
+      - name: Setup Node.js (Base)
+        uses: dumlj/dumlj-workflows/.github/actions/setup.node@main
+        with:
+          node_version: '20'
+          git_access_token: ${{ secrets.CI_GIT_TOKEN }}
+      # 扩展：安装 Emscripten (用于构建 WASM)
+      - name: Setup Emscripten
+        uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: 'latest'
+      # 发布
+      - name: Deploy to github page
+        uses: dumlj/dumlj-workflows/.github/actions/gh-page.node@main
+        with:
+          git_access_token: ${{ secrets.CI_GIT_TOKEN }}
+          codecov_token: ${{ secrets.CODECOV_TOKEN }}

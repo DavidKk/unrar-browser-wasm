@@ -72,7 +72,11 @@ function formatFileSize(bytes: number | bigint): string {
 async function loadUnrarModule(): Promise<void> {
   try {
     log('Starting to load UnRAR WASM module', 'info')
-    unrarModule = await getUnrarModule()
+    // 从 Vite 环境变量获取 base URL（如果可用）
+    const basePath = typeof import.meta !== 'undefined' && (import.meta as any).env?.BASE_URL 
+      ? (import.meta as any).env.BASE_URL 
+      : '/'
+    unrarModule = await getUnrarModule(basePath)
     log('UnRAR WASM module loaded successfully', 'success')
     moduleStatus.textContent = 'UnRAR WASM module loaded successfully ✓'
     moduleStatus.className = 'p-3 bg-green-50 border border-green-200 rounded mb-4 text-sm text-green-800'
