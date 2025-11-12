@@ -1,8 +1,8 @@
-# Install script for directory: /Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm
+# Install script for directory: /home/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/runner/work/_temp/a2552c34-078c-44f3-bd31-a895fa58ed65/emsdk-main/upstream/emscripten/cache/sysroot")
+  set(CMAKE_INSTALL_PREFIX "/home/runner/work/_temp/5da60300-1cc4-4de9-bf40-cf8a0119a61f/emsdk-main/upstream/emscripten/cache/sysroot")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,7 +40,7 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/install_local_manifest.txt"
+  file(WRITE "/home/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -56,6 +56,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/runner/work/unrar-browser-wasm/unrar-browser-wasm/packages/unrar-wasm/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
