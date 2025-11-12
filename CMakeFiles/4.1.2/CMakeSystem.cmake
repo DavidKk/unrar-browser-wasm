@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Darwin")
 set(CMAKE_HOST_SYSTEM_VERSION "24.6.0")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "arm64")
 
-include("/Users/runner/work/_temp/992c701f-3eb3-4a8b-be03-149b18adfad4/emsdk-main/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake")
+include("/Users/runner/work/_temp/a2552c34-078c-44f3-bd31-a895fa58ed65/emsdk-main/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake")
 
 set(CMAKE_SYSTEM "Emscripten-1")
 set(CMAKE_SYSTEM_NAME "Emscripten")
