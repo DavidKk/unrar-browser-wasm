@@ -59,6 +59,9 @@ jobs:
         uses: mymindstorm/setup-emsdk@v14
         with:
           version: 'latest'
+      # 安装 Playwright 浏览器（E2E 测试需要）
+      - name: Install Playwright Browsers
+        run: pnpm exec playwright install --with-deps chromium
       # 测试/覆盖率
       - name: Run tests and collect coverage
         uses: dumlj/dumlj-workflows/.github/actions/coverage.node@main
