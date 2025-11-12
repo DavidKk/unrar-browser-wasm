@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "npmClient": "pnpm",
+  "command": {
+    "publish": {
+      "npmClient": "npm",
+      "ignoreChanges": ["ignored-file", "*.md"],
+      "message": "chore(release): publish"
+    }
+  }
+}

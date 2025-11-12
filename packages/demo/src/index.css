@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 min-h-screen;
+  }
+}
+
+.border-3 {
+  border-width: 3px;
+}
+
