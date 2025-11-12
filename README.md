@@ -1,14 +1,14 @@
 # UnRAR Browser
 
 [![npm version](https://img.shields.io/npm/v/@unrar-browser/core.svg)](https://www.npmjs.com/package/@unrar-browser/core)
-[![CI](https://github.com/DavidKk/unrar-browser-wasm/workflows/CI/badge.svg)](https://github.com/DavidKk/unrar-browser-wasm/actions)
+[![build](https://github.com/DavidKk/unrar-browser-wasm/actions/workflows/build.workflow.yml/badge.svg?branch=main)](https://github.com/DavidKk/unrar-browser-wasm/actions/workflows/build.workflow.yml)
 [![License](https://img.shields.io/npm/l/@unrar-browser/core.svg)](LICENSE)
 
 > 🎯 A WebAssembly library for extracting RAR files in the browser
 
 Compile UnRAR to WebAssembly, allowing you to extract RAR files directly in the browser without server support.
 
-English | [简体中文](./README.zh-CN.md)
+**🌐 [Live Demo](https://davidkk.github.io/unrar-browser-wasm/)** | English | [简体中文](./README.zh-CN.md)
 
 ## ✨ Features
 
@@ -361,6 +361,7 @@ Based on UnRAR source code, complies with [UnRAR License](https://www.rarlab.com
 
 ## 🔗 Links
 
+- [Live Demo](https://davidkk.github.io/unrar-browser-wasm/) - Try it online
 - [npm Package](https://www.npmjs.com/package/@unrar-browser/core)
 - [GitHub Repository](https://github.com/DavidKk/unrar-browser-wasm)
 - [Issue Tracker](https://github.com/DavidKk/unrar-browser-wasm/issues)
