@@ -2,16 +2,19 @@
   "name": "@unrar-browser/core",
   "version": "1.0.0",
   "description": "WebAssembly build of UnRAR library for browser",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "build": "shx rm -rf build && shx mkdir -p build && cd build && emcmake cmake .. && emmake make",
-    "clean": "shx rm -rf build",
+    "build:wasm": "shx rm -rf build && shx mkdir -p build && cd build && emcmake cmake .. && emmake make",
+    "build:ts": "tsc",
+    "build": "pnpm run build:wasm && pnpm run build:ts",
+    "clean": "shx rm -rf build dist",
     "lint:ts": "eslint --fix ."
   },
   "devDependencies": {
-    "shx": "^0.3.4"
+    "shx": "^0.3.4",
+    "typescript": "^5.0.0"
   },
   "keywords": [
     "unrar",
@@ -34,7 +37,7 @@
   },
   "homepage": "https://github.com/DavidKk/unrar-browser-wasm#readme",
   "files": [
-    "src/",
+    "dist/",
     "build/unrar.js",
     "build/unrar.wasm",
     "README.md"

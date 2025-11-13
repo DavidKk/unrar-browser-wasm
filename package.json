@@ -17,10 +17,10 @@
     "dev:e2e": "pnpm --filter @unrar-browser/e2e-demo dev",
     "dev:node": "pnpm --filter @unrar-browser/node-demo dev",
     "node-demo": "pnpm --filter @unrar-browser/node-demo start",
+    "test": "pnpm test:unit && pnpm test:web && pnpm test:e2e",
+    "test:unit": "jest --config jest.config.unittest.ts",
+    "test:web": "jest --config jest.config.webtest.ts",
     "test:e2e": "playwright test --reporter=list",
-    "test:e2e:ui": "playwright test --ui",
-    "test:e2e:debug": "playwright test --debug",
-    "test:e2e:headed": "playwright test --headed",
     "ok": "pnpm lint && pnpm build && pnpm test:e2e",
     "ci": "pnpm lint && pnpm build && pnpm test:e2e --project=chromium"
   },
