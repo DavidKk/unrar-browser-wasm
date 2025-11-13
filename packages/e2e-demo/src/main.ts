@@ -95,7 +95,12 @@ async function autoTestExtraction(): Promise<void> {
     log('=== Starting automatic test ===', 'info')
     log('Loading q.rar file...', 'info')
 
-    const response = await fetch('/q.rar')
+    // 使用 Vite 的 BASE_URL 环境变量来构建正确的路径
+    const basePath = (import.meta as any).env?.BASE_URL || '/'
+    const rarPath = `${basePath}q.rar`.replace(/\/+/g, '/') // 移除重复的斜杠
+    log(`Fetching from: ${rarPath}`, 'debug')
+    
+    const response = await fetch(rarPath)
     if (!response.ok) {
       throw new Error(`Failed to load file: ${response.status} ${response.statusText}`)
     }

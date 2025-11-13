@@ -8,7 +8,12 @@
 
 将 UnRAR 编译为 WebAssembly，让你可以在浏览器中直接解压 RAR 文件，无需服务器支持。
 
-**🌐 [在线演示](https://davidkk.github.io/unrar-browser-wasm/)** | [English](./README.md) | 简体中文
+**🌐 在线演示：**
+- [⚡ Vite 演示](https://davidkk.github.io/unrar-browser-wasm/vite-demo/) - 基于 Vite 的现代 React 应用
+- [▲ Next.js 演示](https://davidkk.github.io/unrar-browser-wasm/nextjs-demo/) - 服务端渲染演示
+- [🧪 E2E 测试演示](https://davidkk.github.io/unrar-browser-wasm/e2e-demo/) - 端到端测试演示
+
+[English](./README.md) | 简体中文
 
 ## ✨ 特性
 
@@ -178,6 +183,203 @@ module.exports = {
   },
 }
 ```
+
+### Next.js
+
+由于 Next.js 同时运行服务端和客户端代码，而 `@unrar-browser/core` 需要在**浏览器环境**中运行，需要特别注意以下几点：
+
+#### 1. Webpack 配置（必需）
+
+在 `next.config.js` 中配置 webpack，确保客户端构建时忽略 Node.js 模块：
+
+```javascript
+// next.config.js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  webpack: (config, { isServer }) => {
+    // 在客户端构建中，忽略 Node.js 模块
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+        crypto: false,
+        module: false,
+      }
+    }
+    return config
+  },
+  // 必需的 HTTP 头（用于 SharedArrayBuffer）
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Cross-Origin-Embedder-Policy',
+            value: 'require-corp',
+          },
+          {
+            key: 'Cross-Origin-Opener-Policy',
+            value: 'same-origin',
+          },
+        ],
+      },
+    ]
+  },
+}
+
+module.exports = nextConfig
+```
+
+#### 2. 使用 'use client' 指令（必需）
+
+**重要**：必须在客户端组件中使用，添加 `'use client'` 指令：
+
+```tsx
+// app/unrar/page.tsx 或 components/UnrarExtractor.tsx
+'use client'
+
+import { useState, useEffect } from 'react'
+import { getUnrarModule } from '@unrar-browser/core'
+
+export default function UnrarPage() {
+  const [unrar, setUnrar] = useState<any>(null)
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    // 只在客户端加载
+    getUnrarModule()
+      .then(setUnrar)
+      .catch(console.error)
+      .finally(() => setLoading(false))
+  }, [])
+
+  if (loading) return <div>加载中...</div>
+  if (!unrar) return <div>加载失败</div>
+
+  // 使用 unrar...
+  return <div>UnRAR 模块已加载</div>
+}
+```
+
+#### 3. 使用动态导入（推荐）
+
+为了更好的代码分割和避免服务端执行，推荐使用动态导入：
+
+```tsx
+'use client'
+
+import { useState, useEffect } from 'react'
+import dynamic from 'next/dynamic'
+
+// 动态导入，禁用 SSR
+const UnrarComponent = dynamic(
+  () => import('./UnrarComponent'),
+  { ssr: false }
+)
+
+export default function Page() {
+  return <UnrarComponent />
+}
+```
+
+```tsx
+// UnrarComponent.tsx
+'use client'
+
+import { getUnrarModule } from '@unrar-browser/core'
+
+export default function UnrarComponent() {
+  // 组件代码...
+}
+```
+
+#### 4. 完整的 Next.js 示例
+
+```tsx
+// app/unrar/page.tsx
+'use client'
+
+import { useState, useEffect } from 'react'
+import { getUnrarModule } from '@unrar-browser/core'
+
+export default function UnrarPage() {
+  const [unrar, setUnrar] = useState<any>(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+
+  useEffect(() => {
+    // 确保只在客户端执行
+    if (typeof window === 'undefined') return
+
+    getUnrarModule()
+      .then((module) => {
+        setUnrar(module)
+        setError(null)
+      })
+      .catch((err) => {
+        setError(err.message)
+        console.error('Failed to load UnRAR module:', err)
+      })
+      .finally(() => setLoading(false))
+  }, [])
+
+  const handleFileUpload = async (file: File) => {
+    if (!unrar) return
+
+    try {
+      const arrayBuffer = await file.arrayBuffer()
+      const FS = unrar.FS
+      FS.writeFile('/temp.rar', new Uint8Array(arrayBuffer))
+
+      const cmdData = new unrar.CommandData()
+      const archive = new unrar.Archive(cmdData)
+
+      if (!archive.openFile('/temp.rar')) {
+        throw new Error('无法打开 RAR 文件')
+      }
+
+      // 提取文件...
+      // (参考基本使用示例)
+
+      FS.unlink('/temp.rar')
+    } catch (err) {
+      console.error('提取失败:', err)
+    }
+  }
+
+  if (loading) {
+    return <div>正在加载 UnRAR 模块...</div>
+  }
+
+  if (error) {
+    return <div>错误: {error}</div>
+  }
+
+  return (
+    <div>
+      <h1>RAR 文件提取器</h1>
+      <input
+        type="file"
+        accept=".rar"
+        onChange={(e) => {
+          const file = e.target.files?.[0]
+          if (file) handleFileUpload(file)
+        }}
+      />
+    </div>
+  )
+}
+```
+
+**关键要点**：
+1. ✅ **必须使用 `'use client'` 指令** - 确保代码只在客户端运行
+2. ✅ **配置 webpack fallback** - 忽略 Node.js 模块（fs, path, crypto, module 等）
+3. ✅ **使用 `useEffect` 加载模块** - 确保只在客户端执行
+4. ✅ **检查 `typeof window !== 'undefined'`** - 双重保险
+5. ✅ **配置 HTTP 头** - 支持 SharedArrayBuffer
+6. ❌ **不要在服务端组件中使用** - 会导致 Node.js 代码路径被执行
 
 ## 📖 API 文档
 
@@ -361,7 +563,10 @@ MIT License
 
 ## 🔗 链接
 
-- [在线演示](https://davidkk.github.io/unrar-browser-wasm/) - 在线试用
+- 🌐 **在线演示** - 在线试用
+  - [⚡ Vite 演示](https://davidkk.github.io/unrar-browser-wasm/vite-demo/)
+  - [▲ Next.js 演示](https://davidkk.github.io/unrar-browser-wasm/nextjs-demo/)
+  - [🧪 E2E 测试演示](https://davidkk.github.io/unrar-browser-wasm/e2e-demo/)
 - [npm 包](https://www.npmjs.com/package/@unrar-browser/core)
 - [GitHub 仓库](https://github.com/DavidKk/unrar-browser-wasm)
 - [问题反馈](https://github.com/DavidKk/unrar-browser-wasm/issues)

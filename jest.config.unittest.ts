@@ -8,15 +8,18 @@ import type { CompilerOptions } from 'typescript'
 const tsconfigFile = path.join(__dirname, './tsconfig.json')
 const tsconfigContent = fs.readFileSync(tsconfigFile, 'utf-8')
 const { compilerOptions } = JSON5.parse<{ compilerOptions: CompilerOptions }>(tsconfigContent)
-const tsconfigPaths = compilerOptions.paths!
+const tsconfigPaths = compilerOptions?.paths
+
+// 构建模块名称映射
+const moduleNameMapper = tsconfigPaths
+  ? pathsToModuleNameMapper(tsconfigPaths, {
+      prefix: '<rootDir>',
+    })
+  : {}
 
 export default (): Config.InitialOptions => ({
   preset: 'ts-jest',
   testEnvironment: 'node',
   testMatch: ['<rootDir>/__tests__/**/*.spec.ts'],
-  moduleNameMapper: {
-    ...pathsToModuleNameMapper(tsconfigPaths, {
-      prefix: '<rootDir>',
-    }),
-  },
+  moduleNameMapper,
 })

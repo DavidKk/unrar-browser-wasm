@@ -77,7 +77,11 @@ async function loadUnrarFactory(basePath?: string): Promise<UnrarFactory> {
       doc.head.appendChild(script)
     })
   } else {
-    // Node.js 环境 - 使用 require
+    // Node.js 环境 - 使用 createRequire 来支持 ES modules
+    const { createRequire } = await import('module')
+    const require = createRequire(import.meta.url)
+    
+    // 使用相对路径，createRequire 会自动解析相对于当前模块的路径
     // @ts-ignore - 动态 require
     const unrarFactory = require('../build/unrar.js')
     return unrarFactory

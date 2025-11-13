@@ -1,14 +1,11 @@
 import { defineConfig } from 'vite'
-import { fileURLToPath } from 'url'
-import { dirname, resolve } from 'path'
+import { resolve } from 'path'
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
-
-export default defineConfig({
+export default defineConfig(() => ({
+  base: '/unrar-browser-wasm/e2e-demo/',
   resolve: {
     alias: {
-      '@unrar-browser/core': resolve(__dirname, '../unrar-wasm/src/index.ts'),
+      '@unrar-browser/core': resolve(import.meta.dirname, '../unrar-wasm/src/index.ts'),
     },
   },
 
@@ -24,7 +21,7 @@ export default defineConfig({
     },
   },
 
-  publicDir: resolve(__dirname, '../unrar-wasm/build'),
+  publicDir: 'public',
   assetsInclude: ['**/*.wasm'],
 
   build: {
@@ -35,4 +32,4 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['@unrar-browser/core'],
   },
-})
+}))

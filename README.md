@@ -8,7 +8,11 @@
 
 Compile UnRAR to WebAssembly, allowing you to extract RAR files directly in the browser without server support.
 
-**🌐 [Live Demo](https://davidkk.github.io/unrar-browser-wasm/)** | English | [简体中文](./README.zh-CN.md)
+**🌐 Live Demos:**
+- [⚡ Vite Demo](https://davidkk.github.io/unrar-browser-wasm/vite-demo/) - Modern React demo with Vite
+- [▲ Next.js Demo](https://davidkk.github.io/unrar-browser-wasm/nextjs-demo/) - Server-side rendered demo
+- [🧪 E2E Test Demo](https://davidkk.github.io/unrar-browser-wasm/e2e-demo/) - End-to-end testing demo
+English | [简体中文](./README.zh-CN.md)
 
 ## ✨ Features
 
@@ -178,6 +182,203 @@ module.exports = {
   },
 }
 ```
+
+### Next.js
+
+Since Next.js runs both server-side and client-side code, and `@unrar-browser/core` needs to run in the **browser environment**, special attention is required:
+
+#### 1. Webpack Configuration (Required)
+
+Configure webpack in `next.config.js` to ignore Node.js modules during client-side builds:
+
+```javascript
+// next.config.js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  webpack: (config, { isServer }) => {
+    // Ignore Node.js modules in client-side builds
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+        crypto: false,
+        module: false,
+      }
+    }
+    return config
+  },
+  // Required HTTP headers (for SharedArrayBuffer)
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Cross-Origin-Embedder-Policy',
+            value: 'require-corp',
+          },
+          {
+            key: 'Cross-Origin-Opener-Policy',
+            value: 'same-origin',
+          },
+        ],
+      },
+    ]
+  },
+}
+
+module.exports = nextConfig
+```
+
+#### 2. Use 'use client' Directive (Required)
+
+**Important**: Must be used in client components, add the `'use client'` directive:
+
+```tsx
+// app/unrar/page.tsx or components/UnrarExtractor.tsx
+'use client'
+
+import { useState, useEffect } from 'react'
+import { getUnrarModule } from '@unrar-browser/core'
+
+export default function UnrarPage() {
+  const [unrar, setUnrar] = useState<any>(null)
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    // Only load on client side
+    getUnrarModule()
+      .then(setUnrar)
+      .catch(console.error)
+      .finally(() => setLoading(false))
+  }, [])
+
+  if (loading) return <div>Loading...</div>
+  if (!unrar) return <div>Failed to load</div>
+
+  // Use unrar...
+  return <div>UnRAR module loaded</div>
+}
+```
+
+#### 3. Use Dynamic Imports (Recommended)
+
+For better code splitting and to avoid server-side execution, use dynamic imports:
+
+```tsx
+'use client'
+
+import { useState, useEffect } from 'react'
+import dynamic from 'next/dynamic'
+
+// Dynamic import, disable SSR
+const UnrarComponent = dynamic(
+  () => import('./UnrarComponent'),
+  { ssr: false }
+)
+
+export default function Page() {
+  return <UnrarComponent />
+}
+```
+
+```tsx
+// UnrarComponent.tsx
+'use client'
+
+import { getUnrarModule } from '@unrar-browser/core'
+
+export default function UnrarComponent() {
+  // Component code...
+}
+```
+
+#### 4. Complete Next.js Example
+
+```tsx
+// app/unrar/page.tsx
+'use client'
+
+import { useState, useEffect } from 'react'
+import { getUnrarModule } from '@unrar-browser/core'
+
+export default function UnrarPage() {
+  const [unrar, setUnrar] = useState<any>(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+
+  useEffect(() => {
+    // Ensure only runs on client side
+    if (typeof window === 'undefined') return
+
+    getUnrarModule()
+      .then((module) => {
+        setUnrar(module)
+        setError(null)
+      })
+      .catch((err) => {
+        setError(err.message)
+        console.error('Failed to load UnRAR module:', err)
+      })
+      .finally(() => setLoading(false))
+  }, [])
+
+  const handleFileUpload = async (file: File) => {
+    if (!unrar) return
+
+    try {
+      const arrayBuffer = await file.arrayBuffer()
+      const FS = unrar.FS
+      FS.writeFile('/temp.rar', new Uint8Array(arrayBuffer))
+
+      const cmdData = new unrar.CommandData()
+      const archive = new unrar.Archive(cmdData)
+
+      if (!archive.openFile('/temp.rar')) {
+        throw new Error('Cannot open RAR file')
+      }
+
+      // Extract files...
+      // (refer to basic usage example)
+
+      FS.unlink('/temp.rar')
+    } catch (err) {
+      console.error('Extraction failed:', err)
+    }
+  }
+
+  if (loading) {
+    return <div>Loading UnRAR module...</div>
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>
+  }
+
+  return (
+    <div>
+      <h1>RAR File Extractor</h1>
+      <input
+        type="file"
+        accept=".rar"
+        onChange={(e) => {
+          const file = e.target.files?.[0]
+          if (file) handleFileUpload(file)
+        }}
+      />
+    </div>
+  )
+}
+```
+
+**Key Points**:
+1. ✅ **Must use `'use client'` directive** - Ensures code only runs on client side
+2. ✅ **Configure webpack fallback** - Ignore Node.js modules (fs, path, crypto, module, etc.)
+3. ✅ **Use `useEffect` to load module** - Ensures only runs on client side
+4. ✅ **Check `typeof window !== 'undefined'`** - Double safety check
+5. ✅ **Configure HTTP headers** - Support SharedArrayBuffer
+6. ❌ **Do not use in server components** - Will cause Node.js code path to execute
 
 ## 📖 API Documentation
 
@@ -361,7 +562,10 @@ Based on UnRAR source code, complies with [UnRAR License](https://www.rarlab.com
 
 ## 🔗 Links
 
-- [Live Demo](https://davidkk.github.io/unrar-browser-wasm/) - Try it online
+- 🌐 **Live Demos** - Try it online
+  - [⚡ Vite Demo](https://davidkk.github.io/unrar-browser-wasm/vite-demo/)
+  - [▲ Next.js Demo](https://davidkk.github.io/unrar-browser-wasm/nextjs-demo/)
+  - [🧪 E2E Test Demo](https://davidkk.github.io/unrar-browser-wasm/e2e-demo/)
 - [npm Package](https://www.npmjs.com/package/@unrar-browser/core)
 - [GitHub Repository](https://github.com/DavidKk/unrar-browser-wasm)
 - [Issue Tracker](https://github.com/DavidKk/unrar-browser-wasm/issues)

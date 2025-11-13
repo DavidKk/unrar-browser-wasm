@@ -1,0 +1,21 @@
+{
+  "name": "@unrar-browser/node-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Node.js demo for UnRAR WASM",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "lint:ts": "eslint --fix ."
+  },
+  "dependencies": {
+    "@unrar-browser/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4.7.0",
+    "typescript": "^5.7.2"
+  }
+}
+

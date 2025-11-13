@@ -1,51 +1,52 @@
 # @unrar-browser/core
 
-WebAssembly build of the UnRAR library for extracting RAR archives in the browser and Node.js.
+用于在浏览器和 Node.js 中解压 RAR 归档的 UnRAR 库 WebAssembly 构建版本。
 
-English | [简体中文](./README.zh-CN.md)
+[English](./README.md) | 简体中文
 
-## Installation
+## 安装
 
 ```bash
 pnpm install @unrar-browser/core
 ```
 
-## Usage
+## 使用
 
 ```javascript
 import { getUnrarModule } from '@unrar-browser/core'
 
-// Initialize the module
+// 初始化模块
 const unrar = await getUnrarModule()
 
-// Write RAR file to virtual filesystem
+// 将 RAR 文件写入虚拟文件系统
 unrar.FS.writeFile('/archive.rar', fileData)
 
-// Extract files
+// 解压文件
 const cmdData = new unrar.CommandData()
 const archive = new unrar.Archive(cmdData)
 archive.openFile('/archive.rar')
 
-// Read file headers and extract content
+// 读取文件头并解压内容
 while (archive.readHeader() > 0) {
   const headerType = archive.getHeaderType()
   if (headerType === unrar.HeaderType.HEAD_FILE) {
     const fileName = archive.getFileName()
     const fileData = archive.readFileData()
-    console.log(`Extracted: ${fileName}`)
+    console.log(`已解压: ${fileName}`)
   }
   archive.seekToNext()
 }
 ```
 
-## Building
+## 构建
 
 ```bash
 pnpm build
 ```
 
-Requires Emscripten to be installed.
+需要安装 Emscripten。
 
-## License
+## 许可证
 
-This project uses the UnRAR library which is distributed under a specific license. See vendor/unrar/license.txt for details.
+本项目使用 UnRAR 库，该库在特定许可证下分发。详情请参阅 vendor/unrar/license.txt。
+

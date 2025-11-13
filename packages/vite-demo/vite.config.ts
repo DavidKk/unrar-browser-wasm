@@ -1,23 +1,19 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { fileURLToPath } from 'url'
-import { dirname, resolve } from 'path'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
+import { resolve } from 'path'
 
 export default defineConfig({
-  base: '/unrar-browser-wasm/',
+  base: '/unrar-browser-wasm/vite-demo/',
   plugins: [react()],
   resolve: {
     alias: {
-      '@unrar-browser/core': resolve(__dirname, '../unrar-wasm/src/index.ts'),
+      '@unrar-browser/core': resolve(import.meta.dirname, '../unrar-wasm/src/index.ts'),
     },
   },
 
   server: {
     port: 3000,
-    open: true,
+    open: false,
     headers: {
       'Cross-Origin-Embedder-Policy': 'require-corp',
       'Cross-Origin-Opener-Policy': 'same-origin',
@@ -27,12 +23,17 @@ export default defineConfig({
     },
   },
 
-  publicDir: resolve(__dirname, '../unrar-wasm/build'),
+  publicDir: 'public',
   assetsInclude: ['**/*.wasm'],
 
   build: {
     outDir: 'dist',
     copyPublicDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
   },
 
   optimizeDeps: {

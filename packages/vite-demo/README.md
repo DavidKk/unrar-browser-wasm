@@ -1,6 +1,8 @@
-# @unrar-browser/demo
+# @unrar-browser/vite-demo
 
-Beautiful GitHub Pages demo for UnRAR Browser with Tailwind CSS.
+Vite demo for UnRAR Browser with Tailwind CSS.
+
+English | [简体中文](./README.zh-CN.md)
 
 ## Development
 
@@ -12,7 +14,7 @@ pnpm install
 pnpm --filter @unrar-browser/core build
 
 # Start dev server
-pnpm --filter @unrar-browser/demo dev
+pnpm --filter @unrar-browser/vite-demo dev
 ```
 
 ## Features
@@ -27,7 +29,7 @@ pnpm --filter @unrar-browser/demo dev
 ## Build for GitHub Pages
 
 ```bash
-pnpm --filter @unrar-browser/demo build
+pnpm --filter @unrar-browser/vite-demo build
 ```
 
-The built files will be in `packages/demo/dist/`.
+The built files will be in `packages/vite-demo/dist/`.
