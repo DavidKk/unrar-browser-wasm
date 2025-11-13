@@ -11,7 +11,6 @@
 **🌐 在线演示：**
 - [⚡ Vite 演示](https://davidkk.github.io/unrar-browser-wasm/) - 基于 Vite 的现代 React 应用（主演示）
 - [▲ Next.js 演示](https://davidkk.github.io/unrar-browser-wasm/nextjs-demo/) - 服务端渲染演示
-- [🧪 E2E 演示](https://davidkk.github.io/unrar-browser-wasm/e2e-demo/) - 带控制台输出的测试演示
 
 [English](./README.md) | 简体中文
 
@@ -565,7 +564,6 @@ MIT License
 
 - [🌐 在线演示](https://davidkk.github.io/unrar-browser-wasm/) - 在线试用
   - [▲ Next.js 演示](https://davidkk.github.io/unrar-browser-wasm/nextjs-demo/)
-  - [🧪 E2E 演示](https://davidkk.github.io/unrar-browser-wasm/e2e-demo/)
 - [npm 包](https://www.npmjs.com/package/@unrar-browser/core)
 - [GitHub 仓库](https://github.com/DavidKk/unrar-browser-wasm)
 - [问题反馈](https://github.com/DavidKk/unrar-browser-wasm/issues)

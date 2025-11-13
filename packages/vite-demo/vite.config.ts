@@ -1,17 +1,13 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { fileURLToPath } from 'url'
-import { dirname, resolve } from 'path'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
+import { resolve } from 'path'
 
 export default defineConfig({
   base: '/unrar-browser-wasm/',
   plugins: [react()],
   resolve: {
     alias: {
-      '@unrar-browser/core': resolve(__dirname, '../unrar-wasm/src/index.ts'),
+      '@unrar-browser/core': resolve(import.meta.dirname, '../unrar-wasm/src/index.ts'),
     },
   },
 

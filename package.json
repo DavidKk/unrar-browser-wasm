@@ -4,7 +4,7 @@
   "description": "WebAssembly build of UnRAR library",
   "scripts": {
     "commit": "git-cz",
-    "ci:pages": "shx rm -rf ./gh-pages && shx mkdir -p ./gh-pages && pnpm build && pnpm build:demos && shx cp -r packages/vite-demo/dist/* ./gh-pages/ && shx cp packages/unrar-wasm/build/unrar.js packages/unrar-wasm/build/unrar.wasm ./gh-pages/ && shx mkdir -p ./gh-pages/nextjs-demo ./gh-pages/e2e-demo && shx cp -r packages/nextjs-demo/out/* ./gh-pages/nextjs-demo/ && shx cp -r packages/e2e-demo/dist/* ./gh-pages/e2e-demo/ && shx cp packages/unrar-wasm/build/unrar.js packages/unrar-wasm/build/unrar.wasm ./gh-pages/e2e-demo/",
+    "ci:pages": "shx rm -rf ./gh-pages && shx mkdir -p ./gh-pages && pnpm build && pnpm build:demos && shx cp -r packages/vite-demo/dist/* ./gh-pages/ && shx cp packages/unrar-wasm/build/unrar.js packages/unrar-wasm/build/unrar.wasm ./gh-pages/ && shx mkdir -p ./gh-pages/nextjs-demo && shx cp -r packages/nextjs-demo/out/* ./gh-pages/nextjs-demo/ && shx cp packages/unrar-wasm/build/unrar.js packages/unrar-wasm/build/unrar.wasm",
     "ci:coverage": "pnpm build && pnpm test:e2e --project=chromium",
     "ci:build": "pnpm build",
     "postinstall": "node --experimental-modules ./scripts/postinstall.mjs",
@@ -12,8 +12,10 @@
     "format": "prettier --config .prettierrc.js --write \"**/*.{js,jsx,ts,tsx,d.ts,vue,md,json,yml,yaml}\"",
     "lint": "eslint -c eslint.config.mjs --fix .",
     "build": "pnpm --filter @unrar-browser/core build",
-    "build:demos": "pnpm --filter @unrar-browser/vite-demo build && pnpm --filter @unrar-browser/e2e-demo build && pnpm --filter @unrar-browser/nextjs-demo build",
+    "prepare:e2e": "shx mkdir -p packages/e2e-demo/public && shx cp packages/unrar-wasm/build/unrar.js packages/unrar-wasm/build/unrar.wasm packages/e2e-demo/public/",
+    "build:demos": "pnpm prepare:e2e && pnpm --filter @unrar-browser/vite-demo build && pnpm --filter @unrar-browser/e2e-demo build && pnpm --filter @unrar-browser/nextjs-demo build",
     "dev": "pnpm --filter @unrar-browser/vite-demo dev",
+    "predev:e2e": "pnpm run prepare:e2e || true",
     "dev:e2e": "pnpm --filter @unrar-browser/e2e-demo dev",
     "dev:node": "pnpm --filter @unrar-browser/node-demo dev",
     "dev:nextjs": "pnpm --filter @unrar-browser/nextjs-demo dev",
@@ -21,6 +23,7 @@
     "test": "pnpm test:unit && pnpm test:web && pnpm test:e2e",
     "test:unit": "jest --config jest.config.unittest.ts",
     "test:web": "jest --config jest.config.webtest.ts",
+    "pretest:e2e": "pnpm run prepare:e2e || true",
     "test:e2e": "playwright test --reporter=list",
     "ok": "pnpm lint && pnpm build && pnpm test:e2e",
     "ci": "pnpm lint && pnpm build && pnpm test:e2e --project=chromium"
