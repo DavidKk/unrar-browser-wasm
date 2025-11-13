@@ -3,10 +3,11 @@
  * 测试在浏览器环境下的功能
  */
 
-import { getUnrarModule } from './helpers/unrar-web-loader'
-import type { UnrarModule } from './helpers/unrar-web-loader'
 import { readFileSync } from 'fs'
 import { join } from 'path'
+
+import type { UnrarModule } from './helpers/unrar-web-loader'
+import { getUnrarModule } from './helpers/unrar-web-loader'
 
 describe('UnRAR Web 环境测试', () => {
   let unrar: UnrarModule
@@ -72,7 +73,7 @@ describe('UnRAR Web 环境测试', () => {
       // 读取 RAR 文件
       const rarBuffer = readFileSync(testRarFile)
       const rarData = new Uint8Array(rarBuffer)
-      
+
       expect(rarData.length).toBeGreaterThan(0)
 
       // 写入虚拟文件系统
@@ -155,13 +156,13 @@ describe('UnRAR Web 环境测试', () => {
       }
 
       expect(files.length).toBeGreaterThan(0)
-      
-      files.forEach(file => {
+
+      files.forEach((file) => {
         expect(file.name).toBeDefined()
         expect(typeof file.name).toBe('string')
         expect(file.name.length).toBeGreaterThan(0)
         expect(typeof file.isDirectory).toBe('boolean')
-        
+
         if (!file.isDirectory) {
           expect(file.size).toBeGreaterThanOrEqual(0)
         }
@@ -199,9 +200,9 @@ describe('UnRAR Web 环境测试', () => {
           if (!isDirectory) {
             const fileData = archive.readFileData()
             const dataSize = fileData.size()
-            
+
             expect(dataSize).toBeGreaterThanOrEqual(0)
-            
+
             const data = new Uint8Array(dataSize)
             for (let i = 0; i < dataSize; i++) {
               data[i] = fileData.get(i)
@@ -209,7 +210,7 @@ describe('UnRAR Web 环境测试', () => {
 
             expect(data).toBeDefined()
             expect(data.length).toBe(dataSize)
-            
+
             console.log(`  ✓ 提取文件: ${name} (${dataSize} bytes)`)
             extractedFileCount++
           }
@@ -243,19 +244,19 @@ describe('UnRAR Web 环境测试', () => {
     test('应该能够正确处理无效的 RAR 文件', () => {
       const FS = unrar.FS
       const virtualPath = '/invalid-web.rar'
-      
+
       const invalidData = new Uint8Array(100)
       for (let i = 0; i < 100; i++) {
         invalidData[i] = Math.floor(Math.random() * 256)
       }
-      
+
       FS.writeFile(virtualPath, invalidData)
 
       const cmdData = new unrar.CommandData()
       const archive = new unrar.Archive(cmdData)
 
       const openResult = archive.openFile(virtualPath)
-      
+
       if (openResult) {
         const isValidArchive = archive.isArchive(true)
         expect(isValidArchive).toBe(false)
@@ -306,11 +307,10 @@ describe('UnRAR Web 环境测试', () => {
       const { getUnrarModule: testGetUnrarModule } = await import('./helpers/unrar-web-loader')
       const unrar1 = await testGetUnrarModule()
       const unrar2 = await testGetUnrarModule()
-      
+
       // 验证返回的是同一个实例
       expect(unrar1).toBe(unrar2)
       expect(unrar1).toBe(unrar)
     })
   })
 })
-

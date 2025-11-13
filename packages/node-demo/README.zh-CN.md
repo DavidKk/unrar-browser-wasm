@@ -98,4 +98,3 @@ FS.unlink('/temp.rar')
 - **加载方式**: Node.js 版本使用 `require()` 直接加载，浏览器版本使用 `<script>` 标签
 - **文件系统**: Node.js 版本可以使用 Node.js 的 `fs` 模块读写文件
 - **性能**: Node.js 版本通常性能更好，因为可以使用更多系统资源
-

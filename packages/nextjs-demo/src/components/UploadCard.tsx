@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react'
+
 import { formatFileSize } from '@/utils'
 
 interface UploadCardProps {
@@ -86,4 +87,3 @@ export default function UploadCard({ selectedFile, isExtracting, moduleLoaded, o
     </div>
   )
 }
-

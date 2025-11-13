@@ -1,4 +1,5 @@
-import { useState, useCallback } from 'react'
+import { useCallback, useState } from 'react'
+
 import { UnrarModule } from './useUnrarModule'
 
 export interface ExtractedFile {
@@ -116,4 +117,3 @@ export function useUnrarExtractor(module: UnrarModule | null): UseUnrarExtractor
     clear,
   }
 }
-

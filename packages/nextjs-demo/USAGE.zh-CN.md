@@ -116,6 +116,7 @@ packages/nextjs-demo/
 ### 1. WASM 文件加载失败
 
 确保：
+
 - `public` 目录包含 `unrar.js` 和 `unrar.wasm`
 - 文件路径正确（应该在应用根目录 `/` 下）
 - 服务器正确配置 WASM MIME 类型
@@ -127,6 +128,7 @@ Next.js 开发服务器会自动处理热重载，但 WASM 模块可能需要刷
 ### 3. 构建错误
 
 如果遇到构建错误，尝试：
+
 - 清理缓存：`rm -rf .next`
 - 重新安装依赖：`pnpm install`
 - 检查 TypeScript 错误：`pnpm type-check`
@@ -157,4 +159,3 @@ pnpm build:nextjs
 - 使用 `'use client'` 指令标记需要客户端功能的组件
 - WASM 模块仅在客户端加载，不在服务器端渲染
 - 使用 `useEffect` 处理 WASM 模块的异步加载
-

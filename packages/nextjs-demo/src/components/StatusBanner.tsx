@@ -22,4 +22,3 @@ export default function StatusBanner({ message, type, onClose }: StatusBannerPro
     </div>
   )
 }
-

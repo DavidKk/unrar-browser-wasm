@@ -30,13 +30,12 @@ export async function getUnrarModule(): Promise<UnrarModule> {
       // 在 jsdom 环境中，模拟浏览器加载 unrar.js 的行为
       // 实际上直接使用 require 加载 WASM 模块
       const buildPath = join(__dirname, '../../packages/unrar-wasm/build/unrar.js')
-      
+
       let unrarFactory: any
-      
+
       try {
-         
         unrarFactory = require(buildPath)
-        
+
         // 将工厂函数挂载到全局 window.Module（模拟浏览器行为）
         if (typeof window !== 'undefined') {
           ;(window as any).Module = unrarFactory
@@ -66,4 +65,3 @@ export async function getUnrarModule(): Promise<UnrarModule> {
   }
   return initPromise
 }
-

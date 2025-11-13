@@ -116,6 +116,7 @@ This app is configured for static export mode (`output: 'export'`) and can be de
 ### 1. WASM File Loading Failed
 
 Ensure:
+
 - `public` directory contains `unrar.js` and `unrar.wasm`
 - File paths are correct (should be at app root `/`)
 - Server properly configures WASM MIME type
@@ -127,6 +128,7 @@ Next.js dev server handles hot reload automatically, but WASM modules may requir
 ### 3. Build Errors
 
 If you encounter build errors, try:
+
 - Clean cache: `rm -rf .next`
 - Reinstall dependencies: `pnpm install`
 - Check TypeScript errors: `pnpm type-check`

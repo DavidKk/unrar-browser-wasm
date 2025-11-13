@@ -12,14 +12,10 @@ export default function LoadingProgress({ progress, message = 'Loading...' }: Lo
           <span className="text-gray-500 font-mono">{Math.round(progress)}%</span>
         </div>
         <div className="w-full bg-gray-200 h-2">
-          <div
-            className="bg-blue-600 h-2 transition-all duration-300"
-            style={{ width: `${progress}%` }}
-          />
+          <div className="bg-blue-600 h-2 transition-all duration-300" style={{ width: `${progress}%` }} />
         </div>
       </div>
       <p className="text-xs text-gray-500">Downloading WebAssembly module...</p>
     </div>
   )
 }
-

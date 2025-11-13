@@ -1,5 +1,6 @@
-import type { Metadata } from 'next'
 import './globals.css'
+
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'UnRAR Browser WASM - Next.js Demo',
@@ -17,4 +18,3 @@ export default function RootLayout({
     </html>
   )
 }
-

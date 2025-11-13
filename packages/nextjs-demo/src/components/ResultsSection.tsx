@@ -41,4 +41,3 @@ export default function ResultsSection({ files }: ResultsSectionProps) {
     </div>
   )
 }
-

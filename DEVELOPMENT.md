@@ -33,8 +33,10 @@ pnpm ok
 ### 🔥 常用命令
 
 #### `pnpm ok` ⭐
+
 **用途**：提交代码前的快速检查  
 **执行内容**：
+
 1. 代码格式检查和修复（ESLint）
 2. 构建 WASM 核心库
 3. 运行 E2E 测试
@@ -46,6 +48,7 @@ pnpm ok
 ```
 
 #### `pnpm dev`
+
 **用途**：启动 Vite Demo 开发服务器  
 **端口**：http://localhost:3000  
 **自动准备**：会自动复制最新的 WASM 文件到 vite-demo
@@ -55,6 +58,7 @@ pnpm dev
 ```
 
 #### `pnpm dev:e2e`
+
 **用途**：启动 E2E Test Demo 开发服务器  
 **端口**：http://localhost:3000  
 **自动准备**：会自动复制最新的 WASM 文件到 e2e-demo
@@ -64,6 +68,7 @@ pnpm dev:e2e
 ```
 
 #### `pnpm dev:nextjs`
+
 **用途**：启动 Next.js Demo 开发服务器  
 **端口**：http://localhost:3000  
 **自动准备**：会自动复制最新的 WASM 文件到 nextjs-demo
@@ -73,6 +78,7 @@ pnpm dev:nextjs
 ```
 
 #### `pnpm dev:node`
+
 **用途**：启动 Node.js Demo（观察模式）  
 **说明**：用于测试 Node.js 环境下的 UnRAR 功能
 
@@ -81,6 +87,7 @@ pnpm dev:node
 ```
 
 #### `pnpm node-demo`
+
 **用途**：运行 Node.js Demo  
 **示例**：
 
@@ -91,9 +98,11 @@ pnpm node-demo path/to/file.rar ./output
 ### 🏗️ 构建命令
 
 #### `pnpm build`
+
 **用途**：构建 WASM 核心库（@unrar-browser/core）  
 **输出**：`packages/unrar-wasm/build/`  
 **包含**：
+
 - `unrar.js` - WASM 加载器
 - `unrar.wasm` - WebAssembly 二进制文件
 
@@ -102,8 +111,10 @@ pnpm build
 ```
 
 #### `pnpm build:demos`
+
 **用途**：构建所有演示项目  
 **执行流程**：
+
 1. `prepare:e2e` - 复制 WASM 文件到 e2e-demo
 2. `prepare:vite-demo` - 复制 WASM 文件到 vite-demo
 3. `prepare:nextjs-demo` - 复制 WASM 文件到 nextjs-demo
@@ -120,12 +131,15 @@ pnpm build:demos
 这些命令用于将最新的 WASM 文件复制到各个演示项目的 `public/` 目录。
 
 #### `pnpm prepare:e2e`
+
 复制 WASM 文件到 `packages/e2e-demo/public/`
 
 #### `pnpm prepare:vite-demo`
+
 复制 WASM 文件到 `packages/vite-demo/public/`
 
 #### `pnpm prepare:nextjs-demo`
+
 复制 WASM 文件到 `packages/nextjs-demo/public/`
 
 > **注意**：`predev:*` 和 `pretest:e2e` 会自动调用相应的 prepare 命令，通常不需要手动执行。
@@ -133,8 +147,10 @@ pnpm build:demos
 ### 🧪 测试命令
 
 #### `pnpm test`
+
 **用途**：运行所有测试  
 **包含**：
+
 - 单元测试（Jest）
 - Web 测试（JSDOM）
 - E2E 测试（Playwright）
@@ -144,6 +160,7 @@ pnpm test
 ```
 
 #### `pnpm test:unit`
+
 **用途**：运行单元测试  
 **框架**：Jest
 
@@ -152,6 +169,7 @@ pnpm test:unit
 ```
 
 #### `pnpm test:web`
+
 **用途**：运行 Web 环境测试  
 **框架**：Jest + JSDOM
 
@@ -160,6 +178,7 @@ pnpm test:web
 ```
 
 #### `pnpm test:e2e`
+
 **用途**：运行端到端测试  
 **框架**：Playwright  
 **浏览器**：Chromium, Firefox, WebKit  
@@ -172,6 +191,7 @@ pnpm test:e2e
 ### 🎨 代码质量命令
 
 #### `pnpm lint`
+
 **用途**：检查并自动修复代码格式问题  
 **工具**：ESLint
 
@@ -180,6 +200,7 @@ pnpm lint
 ```
 
 #### `pnpm format`
+
 **用途**：格式化代码  
 **工具**：Prettier  
 **范围**：所有 `.js`, `.jsx`, `.ts`, `.tsx`, `.vue`, `.md`, `.json`, `.yml`, `.yaml` 文件
@@ -191,8 +212,10 @@ pnpm format
 ### 🌐 GitHub Pages 部署命令
 
 #### `pnpm ci:pages`
+
 **用途**：构建并准备 GitHub Pages 部署内容  
 **执行流程**：
+
 1. `ci:pages:init` - 清空并初始化 `gh-pages/` 目录，创建 `.nojekyll`
 2. `ci:pages:build` - 构建核心库和所有演示项目
 3. `ci:pages:copy:vite-demo` - 复制 vite-demo 到 `gh-pages/vite-demo/`
@@ -200,6 +223,7 @@ pnpm format
 5. `ci:pages:copy:e2e-demo` - 复制 e2e-demo 到 `gh-pages/e2e-demo/`
 
 **输出目录结构**：
+
 ```
 gh-pages/
 ├── .nojekyll
@@ -226,6 +250,7 @@ pnpm ci:pages
 ```
 
 #### `pnpm ci:coverage`
+
 **用途**：CI 环境下的测试覆盖率检查  
 **执行**：构建 + E2E 测试（仅 Chromium）
 
@@ -234,6 +259,7 @@ pnpm ci:coverage
 ```
 
 #### `pnpm ci:build`
+
 **用途**：CI 环境下的构建  
 **执行**：构建核心库
 
@@ -242,6 +268,7 @@ pnpm ci:build
 ```
 
 #### `pnpm ci`
+
 **用途**：完整的 CI 检查流程  
 **执行**：代码检查 + 构建 + E2E 测试（仅 Chromium）
 
@@ -252,6 +279,7 @@ pnpm ci
 ### 🔧 其他命令
 
 #### `pnpm commit`
+
 **用途**：使用交互式提交工具提交代码  
 **工具**：Commitizen  
 **规范**：Conventional Commits
@@ -261,10 +289,12 @@ pnpm commit
 ```
 
 #### `pnpm postinstall`
+
 **用途**：安装依赖后的自动执行脚本  
 **说明**：自动执行，无需手动运行
 
 #### `pnpm preinstall`
+
 **用途**：安装依赖前的检查脚本  
 **说明**：自动执行，无需手动运行
 
@@ -405,6 +435,7 @@ pnpm ci:pages
 配置：`playwright.config.ts`
 
 **浏览器**：
+
 - Chromium（默认）
 - Firefox（本地开发）
 - WebKit（本地开发）
@@ -437,6 +468,7 @@ npx serve
 ```
 
 然后访问：
+
 - http://localhost:8000/vite-demo/
 - http://localhost:8000/nextjs-demo/
 - http://localhost:8000/e2e-demo/
@@ -455,6 +487,7 @@ pnpm prepare:vite-demo
 ### Q: E2E 测试失败？
 
 A: 确保：
+
 1. WASM 文件已构建：`pnpm build`
 2. E2E Demo 有最新的 WASM 文件：`pnpm prepare:e2e`
 3. 开发服务器端口（3000）未被占用
@@ -462,6 +495,7 @@ A: 确保：
 ### Q: GitHub Pages 上没有 WASM 文件？
 
 A: 确保：
+
 1. 本地构建成功：`pnpm ci:pages`
 2. `gh-pages/` 目录中有 WASM 文件
 3. 重新触发 GitHub Actions workflow
@@ -522,4 +556,3 @@ pnpm ok
 ---
 
 **Happy Coding! 🎉**
-

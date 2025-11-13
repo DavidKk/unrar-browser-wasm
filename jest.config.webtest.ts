@@ -1,7 +1,7 @@
 import type { Config } from '@jest/types'
 import fs from 'fs'
-import path from 'path'
 import JSON5 from 'json5'
+import path from 'path'
 import { pathsToModuleNameMapper } from 'ts-jest'
 import type { CompilerOptions } from 'typescript'
 
@@ -16,9 +16,12 @@ const moduleNameMapper: Record<string, string> = {
 }
 
 if (tsconfigPaths) {
-  Object.assign(moduleNameMapper, pathsToModuleNameMapper(tsconfigPaths, {
-    prefix: '<rootDir>',
-  }))
+  Object.assign(
+    moduleNameMapper,
+    pathsToModuleNameMapper(tsconfigPaths, {
+      prefix: '<rootDir>',
+    })
+  )
 }
 
 export default (): Config.InitialOptions => ({

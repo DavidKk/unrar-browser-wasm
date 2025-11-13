@@ -19,4 +19,3 @@ export default function LoadingProgress({ progress, message = 'Loading...' }: Lo
     </div>
   )
 }
-

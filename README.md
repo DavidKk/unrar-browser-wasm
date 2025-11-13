@@ -9,9 +9,11 @@
 Compile UnRAR to WebAssembly, allowing you to extract RAR files directly in the browser without server support.
 
 **🌐 Live Demos:**
+
 - [⚡ Vite Demo](https://davidkk.github.io/unrar-browser-wasm/vite-demo/) - Modern React demo with Vite
 - [▲ Next.js Demo](https://davidkk.github.io/unrar-browser-wasm/nextjs-demo/) - Server-side rendered demo
 - [🧪 E2E Test Demo](https://davidkk.github.io/unrar-browser-wasm/e2e-demo/) - End-to-end testing demo
+
 English | [简体中文](./README.zh-CN.md)
 
 ## ✨ Features
@@ -273,10 +275,7 @@ import { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 
 // Dynamic import, disable SSR
-const UnrarComponent = dynamic(
-  () => import('./UnrarComponent'),
-  { ssr: false }
-)
+const UnrarComponent = dynamic(() => import('./UnrarComponent'), { ssr: false })
 
 export default function Page() {
   return <UnrarComponent />
@@ -373,6 +372,7 @@ export default function UnrarPage() {
 ```
 
 **Key Points**:
+
 1. ✅ **Must use `'use client'` directive** - Ensures code only runs on client side
 2. ✅ **Configure webpack fallback** - Ignore Node.js modules (fs, path, crypto, module, etc.)
 3. ✅ **Use `useEffect` to load module** - Ensures only runs on client side

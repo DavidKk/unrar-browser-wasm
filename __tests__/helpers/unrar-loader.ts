@@ -30,13 +30,13 @@ export async function getUnrarModule(): Promise<UnrarModule> {
       // Jest 在 Node.js 环境中，__dirname 已经可用
       // 直接使用 Node.js 的 require 加载编译后的 WASM 模块
       const buildPath = join(__dirname, '../../packages/unrar-wasm/build/unrar.js')
-      
+
       // 使用 require 加载模块
       let unrarFactory: any
-      
+
       try {
         // 在 Jest 环境中，可以直接使用 require
-         
+
         unrarFactory = require(buildPath)
       } catch (error) {
         throw new Error(`无法加载 UnRAR 模块: ${buildPath}\n错误: ${error}`)
@@ -63,4 +63,3 @@ export async function getUnrarModule(): Promise<UnrarModule> {
   }
   return initPromise
 }
-

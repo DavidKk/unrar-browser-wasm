@@ -1,6 +1,6 @@
 {
   "name": "@unrar-browser/nextjs-demo",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "private": true,
   "description": "Next.js demo for UnRAR Browser WASM",
   "type": "module",
@@ -28,4 +28,3 @@
     "typescript": "^5.7.2"
   }
 }
-

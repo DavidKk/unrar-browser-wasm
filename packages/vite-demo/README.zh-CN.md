@@ -33,4 +33,3 @@ pnpm --filter @unrar-browser/vite-demo build
 ```
 
 构建文件将位于 `packages/vite-demo/dist/`。
-

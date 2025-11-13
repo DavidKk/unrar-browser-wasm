@@ -26,9 +26,9 @@ function getBasePath(basePath?: string): string {
   if (basePath !== undefined) {
     return basePath.endsWith('/') ? basePath : basePath + '/'
   }
-  
+
   if (!isBrowser) return '/'
-  
+
   // 检查 <base> 标签（构建工具可能会自动添加）
   const baseTag = (globalThis as any).document?.querySelector('base')
   if (baseTag?.href) {
@@ -40,7 +40,7 @@ function getBasePath(basePath?: string): string {
       // 如果解析失败，使用默认值
     }
   }
-  
+
   // 默认返回根路径
   return '/'
 }
@@ -80,7 +80,7 @@ async function loadUnrarFactory(basePath?: string): Promise<UnrarFactory> {
     // Node.js 环境 - 使用 createRequire 来支持 ES modules
     const { createRequire } = await import('module')
     const require = createRequire(import.meta.url)
-    
+
     // 使用相对路径，createRequire 会自动解析相对于当前模块的路径
     // @ts-ignore - 动态 require
     const unrarFactory = require('../build/unrar.js')

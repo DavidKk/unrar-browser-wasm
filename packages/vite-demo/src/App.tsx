@@ -1,12 +1,13 @@
-import { useState, useEffect, useCallback } from 'react'
-import { useUnrarModule } from './hooks/useUnrarModule'
-import { useUnrarExtractor } from './hooks/useUnrarExtractor'
-import Header from './components/Header'
-import StatusBanner from './components/StatusBanner'
-import LoadingProgress from './components/LoadingProgress'
-import UploadCard from './components/UploadCard'
-import ResultsSection from './components/ResultsSection'
+import { useCallback, useEffect, useState } from 'react'
+
 import Footer from './components/Footer'
+import Header from './components/Header'
+import LoadingProgress from './components/LoadingProgress'
+import ResultsSection from './components/ResultsSection'
+import StatusBanner from './components/StatusBanner'
+import UploadCard from './components/UploadCard'
+import { useUnrarExtractor } from './hooks/useUnrarExtractor'
+import { useUnrarModule } from './hooks/useUnrarModule'
 
 export type StatusType = 'info' | 'success' | 'error'
 
