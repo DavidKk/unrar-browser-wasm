@@ -45,6 +45,7 @@ function log(message: string, type: LogType = 'info'): void {
   logEntry.textContent = `[${timestamp}] [${type}] ${message}`
   consoleOutput.appendChild(logEntry)
   consoleOutput.scrollTop = consoleOutput.scrollHeight
+  // eslint-disable-next-line no-console
   console.log(`[${type}]`, message)
 }
 
@@ -138,6 +139,7 @@ async function autoTestExtraction(): Promise<void> {
     const errorMessage = error instanceof Error ? error.message : String(error)
     log('Automatic test failed: ' + errorMessage, 'error')
     showStatus('Test failed: ' + errorMessage, 'error')
+    // eslint-disable-next-line no-console
     console.error('Automatic test error:', error)
   }
 }
@@ -241,6 +243,7 @@ async function extractRarFile(arrayBuffer: ArrayBuffer, password = '', fileName 
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : String(error)
     log('Extraction failed: ' + errorMessage, 'error')
+    // eslint-disable-next-line no-console
     console.error('Extraction error:', error)
     throw error
   }

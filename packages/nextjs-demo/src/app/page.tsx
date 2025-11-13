@@ -1,20 +1,17 @@
 'use client'
 
+import { Footer, Header, LoadingProgress, ResultsSection, StatusBanner, StatusType, UploadCard, useUnrarExtractor, useUnrarModule } from '@unrar-browser/react-demo-shared'
 import { useCallback, useEffect, useState } from 'react'
 
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
-import LoadingProgress from '@/components/LoadingProgress'
-import ResultsSection from '@/components/ResultsSection'
-import StatusBanner from '@/components/StatusBanner'
-import UploadCard from '@/components/UploadCard'
-import { useUnrarExtractor } from '@/hooks/useUnrarExtractor'
-import { useUnrarModule } from '@/hooks/useUnrarModule'
-
-export type StatusType = 'info' | 'success' | 'error'
-
 export default function Home() {
-  const { module: unrarModule, loading: moduleLoading, progress: loadingProgress, error: moduleError } = useUnrarModule()
+  const {
+    module: unrarModule,
+    loading: moduleLoading,
+    progress: loadingProgress,
+    error: moduleError,
+  } = useUnrarModule({
+    autoDetectSubPath: '/nextjs-demo',
+  })
   const { extractedFiles, isExtracting, error: extractError, extract, clear } = useUnrarExtractor(unrarModule)
   const [statusMessage, setStatusMessage] = useState<{ message: string; type: StatusType } | null>(null)
   const [selectedFile, setSelectedFile] = useState<File | null>(null)

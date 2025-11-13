@@ -12,8 +12,10 @@ describe('UnRAR Node.js 环境测试', () => {
     jest.setTimeout(30000)
 
     // 初始化 unrar 模块
+    // eslint-disable-next-line no-console
     console.log('正在加载 UnRAR 模块...')
     unrar = await getUnrarModule()
+    // eslint-disable-next-line no-console
     console.log('UnRAR 模块加载成功')
   }, 30000)
 
@@ -123,6 +125,7 @@ describe('UnRAR Node.js 环境测试', () => {
 
         files.push({ name, size, isDirectory })
 
+        // eslint-disable-next-line no-console
         console.log(`  ${isDirectory ? '📁' : '📄'} ${name} ${!isDirectory ? `(${size} bytes)` : ''}`)
       } else if (headerType === unrar.HeaderType.HEAD_ENDARC) {
         break
@@ -146,6 +149,7 @@ describe('UnRAR Node.js 环境测试', () => {
       }
     })
 
+    // eslint-disable-next-line no-console
     console.log(`\n  总计: ${files.length} 个文件/目录`)
 
     // 清理
@@ -197,6 +201,7 @@ describe('UnRAR Node.js 环境测试', () => {
           expect(data).toBeDefined()
           expect(data.length).toBe(dataSize)
 
+          // eslint-disable-next-line no-console
           console.log(`  ✓ 提取文件: ${name} (${dataSize} bytes)`)
           extractedFileCount++
         }
@@ -209,6 +214,7 @@ describe('UnRAR Node.js 环境测试', () => {
 
     // 验证至少提取了一个文件
     expect(extractedFileCount).toBeGreaterThan(0)
+    // eslint-disable-next-line no-console
     console.log(`\n  成功提取: ${extractedFileCount} 个文件`)
 
     // 清理

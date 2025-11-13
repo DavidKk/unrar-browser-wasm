@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@unrar-browser/core": "workspace:*",
+    "@unrar-browser/react-demo-shared": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

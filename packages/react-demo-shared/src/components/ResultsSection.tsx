@@ -1,4 +1,4 @@
-import { ExtractedFile } from '../hooks/useUnrarExtractor'
+import { ExtractedFile } from '../types'
 import { formatFileSize } from '../utils'
 
 interface ResultsSectionProps {

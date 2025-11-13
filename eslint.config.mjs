@@ -18,6 +18,7 @@ export default [
       'packages/*/out/**/*',
       'packages/*/node_modules/**/*',
       'packages/*/.next/**/*',
+      'packages/*/public/**/*.js', // 忽略 public 目录下的 JS 构建产物
       'dist/**/*',
       'gh-pages/**/*',
       '**/*.wasm',
@@ -52,7 +53,7 @@ export default [
         },
       ],
       semi: ['error', 'never'],
-      'no-console': 'off', // 允许 console，开发工具需要
+      'no-console': 'warn', // 警告使用 console，如确实需要使用请添加 eslint-disable-next-line no-console
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
       'eslint-plugin-import/first': 'off',

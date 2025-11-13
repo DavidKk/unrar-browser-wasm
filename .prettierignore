@@ -1,62 +1,46 @@
-# Dest resouces
-/libs
-/coverage
-/junit.xml
-/gitlab-pages
+# 构建输出
+build/
+dist/
+out/
+.next/
+gh-pages/
 
+# 依赖
+node_modules/
+packages/*/node_modules/
 
-# Husky
-.husky
+# 包构建产物
+packages/*/build/
+packages/*/dist/
+packages/*/out/
+packages/*/.next/
 
-# ESLINT
-.eslintcache
+# 公共目录的构建产物
+packages/*/public/**/*.js
+packages/*/public/**/*.wasm
 
-# Npm or Yarn or Pnpm
-pnpm-lock.yaml
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+# 覆盖率报告
+coverage/
 
-# Swap the comments on the following lines if you don't wish to use zero-installs
-# Documentation here: https://yarnpkg.com/features/zero-installs
-!.yarn/cache
-#.pnp.*
+# Git hooks
+.husky/
 
-node_modules
-npm-debug.log
-npm-shrinkwrap.json
-package-lock.json
+# 二进制文件
+**/*.wasm
+**/*.cpp
 
-
-# Numerous always-ignore extensions
-*.bak
-*.diff
-*.err
-*.orig
+# 测试和临时文件
 *.log
-*.rej
-*.swo
+*.tmp
+.cache/
+
+# 编辑器
+.vscode/
+.idea/
 *.swp
-*.zip
-*.vi
+*.swo
 *~
 
-
-# OS or Editor folders
-.vscode
+# 系统文件
 .DS_Store
-._*
 Thumbs.db
-.cache
-.project
-.settings
-.tmproj
-*.esproj
-nbproject
-*.sublime-project
-*.sublime-workspace
-.idea
-.env

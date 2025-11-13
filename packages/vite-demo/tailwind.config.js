@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{ts,tsx,js,jsx}'],
+  content: [
+    './index.html',
+    './src/**/*.{ts,tsx,js,jsx}',
+    // 扫描共享包中的组件
+    '../react-demo-shared/src/**/*.{ts,tsx,js,jsx}',
+  ],
   theme: {
     extend: {
       colors: {

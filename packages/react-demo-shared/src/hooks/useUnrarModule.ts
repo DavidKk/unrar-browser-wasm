@@ -1,16 +1,7 @@
 import { getUnrarModule } from '@unrar-browser/core'
 import { useEffect, useState } from 'react'
 
-export interface UnrarModule {
-  Archive: any
-  CommandData: any
-  setPassword: (password: string) => void
-  FS: any
-  HeaderType: {
-    HEAD_FILE: number
-    HEAD_ENDARC: number
-  }
-}
+import { UnrarModule } from '../types'
 
 interface UseUnrarModuleResult {
   module: UnrarModule | null
@@ -19,14 +10,21 @@ interface UseUnrarModuleResult {
   error: Error | null
 }
 
-export function useUnrarModule(): UseUnrarModuleResult {
+interface UseUnrarModuleOptions {
+  // 用于 Vite：从 import.meta.env.BASE_URL 获取
+  basePath?: string
+  // 用于 Next.js：自动检测路径中的子目录（例如 /nextjs-demo）
+  autoDetectSubPath?: string
+}
+
+export function useUnrarModule(options: UseUnrarModuleOptions = {}): UseUnrarModuleResult {
   const [module, setModule] = useState<UnrarModule | null>(null)
   const [loading, setLoading] = useState(true)
   const [progress, setProgress] = useState(0)
   const [error, setError] = useState<Error | null>(null)
 
   useEffect(() => {
-    // 确保只在浏览器环境中运行
+    // 确保只在浏览器环境中运行（Next.js SSR 支持）
     if (typeof window === 'undefined') {
       return
     }
@@ -51,23 +49,20 @@ export function useUnrarModule(): UseUnrarModuleResult {
           }
         }, 200)
 
-        // 获取 base URL - 支持不同的部署环境
-        // 从当前页面的路径自动检测 basePath
-        let basePath = '/'
-        if (typeof window !== 'undefined') {
-          const pathname = window.location.pathname
-          console.log('[useUnrarModule] Current pathname:', pathname)
+        // 确定 basePath
+        let basePath = options.basePath || '/'
 
-          // 如果路径包含 /nextjs-demo，说明是在子路径部署
-          if (pathname.includes('/nextjs-demo')) {
-            // 提取 basePath（包含 /nextjs-demo 部分，确保以斜杠结尾）
-            const match = pathname.match(/^(.*?\/nextjs-demo)/)
+        // 如果指定了 autoDetectSubPath，则自动检测子路径
+        if (options.autoDetectSubPath && typeof window !== 'undefined') {
+          const pathname = window.location.pathname
+          if (pathname.includes(options.autoDetectSubPath)) {
+            const match = pathname.match(new RegExp(`^(.*?${options.autoDetectSubPath})`))
             if (match) {
               basePath = match[1] + '/'
             }
           }
         }
-        console.log('[useUnrarModule] Using basePath:', basePath)
+
         const loadedModule = await getUnrarModule(basePath)
 
         if (progressInterval) {
@@ -102,7 +97,7 @@ export function useUnrarModule(): UseUnrarModuleResult {
         clearInterval(progressInterval)
       }
     }
-  }, [])
+  }, [options.basePath, options.autoDetectSubPath])
 
   return { module, loading, progress, error }
 }
