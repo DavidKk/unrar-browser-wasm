@@ -1,0 +1,7 @@
+# Build outputs
+dist
+
+# WASM files (copied from @unrar-browser/core build)
+public/unrar.js
+public/unrar.wasm
+
