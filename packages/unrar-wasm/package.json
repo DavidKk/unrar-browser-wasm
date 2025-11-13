@@ -1,6 +1,6 @@
 {
   "name": "@unrar-browser/core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WebAssembly build of UnRAR library for browser",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
