@@ -22,7 +22,8 @@ const moduleStatus = document.getElementById('moduleStatus')!
 const statusMessage = document.getElementById('statusMessage')!
 const consoleOutput = document.getElementById('consoleOutput')!
 const results = document.getElementById('results')!
-const extractedFiles = document.getElementById('extractedFiles')!
+const noencResults = document.getElementById('noencResults')!
+const encResults = document.getElementById('encResults')!
 
 let unrarModule: UnrarModule | null = null
 
@@ -44,6 +45,7 @@ function log(message: string, type: LogType = 'info'): void {
   logEntry.textContent = `[${timestamp}] [${type}] ${message}`
   consoleOutput.appendChild(logEntry)
   consoleOutput.scrollTop = consoleOutput.scrollHeight
+  // eslint-disable-next-line no-console
   console.log(`[${type}]`, message)
 }
 
@@ -79,6 +81,7 @@ async function loadUnrarModule(): Promise<void> {
     moduleStatus.textContent = 'UnRAR WASM module loaded successfully ✓'
     moduleStatus.className = 'p-3 bg-green-50 border border-green-200 rounded mb-4 text-sm text-green-800'
 
+    // 自动测试加密文件解压
     await autoTestExtraction()
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : String(error)
@@ -90,47 +93,81 @@ async function loadUnrarModule(): Promise<void> {
 
 async function autoTestExtraction(): Promise<void> {
   try {
-    log('=== Starting automatic test ===', 'info')
-    log('Loading q.rar file...', 'info')
+    log('=== Starting automatic dual test ===', 'info')
 
-    // 使用 Vite 的 BASE_URL 环境变量来构建正确的路径
     const basePath = (import.meta as any).env?.BASE_URL || '/'
-    const rarPath = `${basePath}q.rar`.replace(/\/+/g, '/') // 移除重复的斜杠
-    log(`Fetching from: ${rarPath}`, 'debug')
 
-    const response = await fetch(rarPath)
-    if (!response.ok) {
-      throw new Error(`Failed to load file: ${response.status} ${response.statusText}`)
+    // 测试 1: 无加密 RAR
+    log('--- Test 1: Loading noencryption.rar (no password) ---', 'info')
+    const noencPath = `${basePath}noencryption.rar`.replace(/\/+/g, '/')
+    log(`Fetching from: ${noencPath}`, 'debug')
+
+    const noencResponse = await fetch(noencPath)
+    if (!noencResponse.ok) {
+      throw new Error(`Failed to load noencryption.rar: ${noencResponse.status}`)
     }
 
-    const arrayBuffer = await response.arrayBuffer()
-    log(`File loaded successfully, size: ${formatFileSize(arrayBuffer.byteLength)}`, 'info')
+    const noencBuffer = await noencResponse.arrayBuffer()
+    log(`noencryption.rar loaded, size: ${formatFileSize(noencBuffer.byteLength)}`, 'info')
 
-    await extractRarFile(arrayBuffer)
+    const noencFiles = await extractRarFile(noencBuffer, '', 'noencryption.rar')
+    displayExtractedFiles(noencFiles, noencResults, 'No Encryption')
+    log('✓ Test 1 completed', 'success')
 
-    log('=== Automatic test completed ===', 'success')
+    // 测试 2: 加密 RAR
+    log('--- Test 2: Loading encryption.rar (with password) ---', 'info')
+    const encPath = `${basePath}encryption.rar`.replace(/\/+/g, '/')
+    log(`Fetching from: ${encPath}`, 'debug')
+
+    const encResponse = await fetch(encPath)
+    if (!encResponse.ok) {
+      throw new Error(`Failed to load encryption.rar: ${encResponse.status}`)
+    }
+
+    const encBuffer = await encResponse.arrayBuffer()
+    log(`encryption.rar loaded, size: ${formatFileSize(encBuffer.byteLength)}`, 'info')
+
+    const encFiles = await extractRarFile(encBuffer, '123', 'encryption.rar')
+    displayExtractedFiles(encFiles, encResults, 'Encrypted')
+    log('✓ Test 2 completed', 'success')
+
+    // 显示结果区域
+    results.classList.remove('hidden')
+    showStatus('All tests completed successfully!', 'success')
+    log('=== All automatic tests completed ===', 'success')
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : String(error)
     log('Automatic test failed: ' + errorMessage, 'error')
+    showStatus('Test failed: ' + errorMessage, 'error')
+    // eslint-disable-next-line no-console
     console.error('Automatic test error:', error)
   }
 }
 
-async function extractRarFile(arrayBuffer: ArrayBuffer): Promise<void> {
+async function extractRarFile(arrayBuffer: ArrayBuffer, password = '', fileName = 'archive.rar'): Promise<ExtractedFile[]> {
   if (!unrarModule) {
-    showStatus('UnRAR WASM module not loaded', 'error')
-    return
+    throw new Error('UnRAR WASM module not loaded')
   }
 
   try {
-    showStatus('Extracting files...', 'info')
+    log(`Extracting ${fileName}...`, 'info')
     log('Initializing archive object...', 'info')
 
-    const FS = unrarModule.FS
-    const fileName = '/temp.rar'
+    // 设置密码（如果有）
+    if (password) {
+      log(`Setting password...`, 'info')
+      unrarModule.setPassword(password)
+      log('Password set successfully', 'success')
+    } else {
+      log('No password provided, clearing any previous password', 'info')
+      unrarModule.setPassword('') // 清除之前的密码
+    }
 
-    log('Writing file to virtual file system: ' + fileName, 'info')
-    FS.writeFile(fileName, new Uint8Array(arrayBuffer))
+    const FS = unrarModule.FS
+    const virtualFileName = '/temp.rar'
+
+    log('Writing file to virtual file system: ' + virtualFileName, 'info')
+    FS.writeFile(virtualFileName, new Uint8Array(arrayBuffer))
     log('File written to virtual file system', 'info')
 
     const cmdData = new unrarModule.CommandData()
@@ -139,16 +176,16 @@ async function extractRarFile(arrayBuffer: ArrayBuffer): Promise<void> {
     const archive = new unrarModule.Archive(cmdData)
     log('Archive object created successfully', 'info')
 
-    const isOpened = archive.openFile(fileName)
+    const isOpened = archive.openFile(virtualFileName)
     if (!isOpened) {
-      FS.unlink(fileName)
+      FS.unlink(virtualFileName)
       throw new Error('Cannot open RAR file')
     }
     log('File opened successfully', 'info')
 
     const isValid = archive.isArchive(true)
     if (!isValid) {
-      FS.unlink(fileName)
+      FS.unlink(virtualFileName)
       throw new Error('Not a valid RAR file')
     }
     log('Valid RAR file', 'info')
@@ -199,31 +236,28 @@ async function extractRarFile(arrayBuffer: ArrayBuffer): Promise<void> {
       archive.seekToNext()
     }
 
-    FS.unlink(fileName)
+    FS.unlink(virtualFileName)
 
-    showRealExtractedFiles(files)
-
-    showStatus('RAR file extracted successfully!', 'success')
-    log('RAR file extracted successfully', 'info')
+    log(`Extracted ${files.length} file(s)/directory(ies)`, 'info')
+    return files
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : String(error)
     log('Extraction failed: ' + errorMessage, 'error')
-    showStatus('Extraction failed: ' + errorMessage, 'error')
+    // eslint-disable-next-line no-console
     console.error('Extraction error:', error)
     throw error
   }
 }
 
-function showRealExtractedFiles(files: ExtractedFile[]): void {
-  results.classList.remove('hidden')
-  extractedFiles.innerHTML = ''
+function displayExtractedFiles(files: ExtractedFile[], container: HTMLElement, title: string): void {
+  container.innerHTML = ''
 
   if (files.length === 0) {
-    extractedFiles.innerHTML = '<p class="text-gray-500">No files found</p>'
+    container.innerHTML = '<p class="text-gray-500">No files found</p>'
     return
   }
 
-  log(`Total ${files.length} file(s)/directory(ies) extracted`, 'info')
+  log(`[${title}] Total ${files.length} file(s)/directory(ies) extracted`, 'info')
 
   const fileList = document.createElement('div')
   fileList.className = 'space-y-4'
@@ -323,15 +357,31 @@ function showRealExtractedFiles(files: ExtractedFile[]): void {
     fileList.appendChild(fileItem)
   })
 
-  extractedFiles.appendChild(fileList)
+  container.appendChild(fileList)
 
-  // Store files for download
-  ;(window as any).extractedFiles = files
+  // Store files for download (keyed by title for multiple tests)
+  if (!(window as any).extractedFilesByTest) {
+    ;(window as any).extractedFilesByTest = {}
+  }
+  ;(window as any).extractedFilesByTest[title] = files
 }
 
 // Global download function
-;(window as any).downloadFile = (fileName: string, index: number) => {
-  const files = (window as any).extractedFiles as ExtractedFile[]
+;(window as any).downloadFile = (fileName: string, index: number, testType?: string) => {
+  let files: ExtractedFile[] | undefined
+
+  // Try to get files from the specific test type
+  if (testType && (window as any).extractedFilesByTest) {
+    files = (window as any).extractedFilesByTest[testType]
+  }
+
+  // Fallback to old approach
+  if (!files) {
+    files = (window as any).extractedFiles as ExtractedFile[]
+  }
+
+  if (!files || !files[index]) return
+
   const file = files[index]
   if (!file || !file.content) return
 

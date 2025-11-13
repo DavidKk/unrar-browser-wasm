@@ -104,6 +104,7 @@ export async function getUnrarModule(basePath?: string): Promise<UnrarModule> {
           if (path.endsWith('.wasm')) {
             // WASM 文件路径需要包含 base 路径（用于 GitHub Pages 等子路径部署）
             const wasmPath = resolvedBasePath + path
+            // eslint-disable-next-line no-console
             console.log('[locateFile] WASM 文件路径:', wasmPath)
             return wasmPath
           }

@@ -12,11 +12,21 @@ interface ExtractedFile {
 /**
  * Extract all files from RAR archive
  */
-async function extractRarFile(rarFilePath: string, outputDir?: string): Promise<ExtractedFile[]> {
+async function extractRarFile(rarFilePath: string, outputDir?: string, password?: string): Promise<ExtractedFile[]> {
+  // eslint-disable-next-line no-console
   console.log(`📦 Loading UnRAR module...`)
   const unrar = await getUnrarModule()
 
+  // eslint-disable-next-line no-console
   console.log(`📂 Reading RAR file: ${rarFilePath}`)
+
+  // Set password if provided
+  if (password) {
+    // eslint-disable-next-line no-console
+    console.log(`🔐 Password: ${'*'.repeat(password.length)}`)
+    unrar.setPassword(password)
+  }
+
   const rarBuffer = readFileSync(rarFilePath)
   const rarData = new Uint8Array(rarBuffer)
 
@@ -25,6 +35,7 @@ async function extractRarFile(rarFilePath: string, outputDir?: string): Promise<
   const virtualPath = '/temp.rar'
   FS.writeFile(virtualPath, rarData)
 
+  // eslint-disable-next-line no-console
   console.log(`🔍 Opening archive...`)
   const cmdData = new unrar.CommandData()
   const archive = new unrar.Archive(cmdData)
@@ -39,6 +50,7 @@ async function extractRarFile(rarFilePath: string, outputDir?: string): Promise<
     throw new Error('Not a valid RAR file')
   }
 
+  // eslint-disable-next-line no-console
   console.log(`✅ Archive validated successfully, extracting files...\n`)
   const files: ExtractedFile[] = []
 
@@ -64,8 +76,10 @@ async function extractRarFile(rarFilePath: string, outputDir?: string): Promise<
       files.push({ name, size, isDirectory, data })
 
       if (isDirectory) {
+        // eslint-disable-next-line no-console
         console.log(`📁 ${name} (Directory)`)
       } else {
+        // eslint-disable-next-line no-console
         console.log(`📄 ${name} (${formatSize(size)})`)
       }
     } else if (headerType === unrar.HeaderType.HEAD_ENDARC) {
@@ -80,6 +94,7 @@ async function extractRarFile(rarFilePath: string, outputDir?: string): Promise<
 
   // Save files if output directory is specified
   if (outputDir && files.length > 0) {
+    // eslint-disable-next-line no-console
     console.log(`\n💾 Saving files to: ${outputDir}`)
     saveFiles(files, outputDir)
   }
@@ -103,12 +118,14 @@ function saveFiles(files: ExtractedFile[], outputDir: string): void {
       if (!existsSync(fileDir)) {
         mkdirSync(fileDir, { recursive: true })
       }
+      // eslint-disable-next-line no-console
       console.log(`  ✓ Created directory: ${file.name}`)
     } else if (file.data) {
       if (!existsSync(fileDir)) {
         mkdirSync(fileDir, { recursive: true })
       }
       writeFileSync(filePath, file.data)
+      // eslint-disable-next-line no-console
       console.log(`  ✓ Saved file: ${file.name}`)
     }
   }
@@ -132,13 +149,16 @@ async function main() {
   const args = process.argv.slice(2)
 
   if (args.length === 0) {
-    console.log('Usage: npm start <rar-file-path> [output-directory]')
-    console.log('Example: npm start q.rar ./output')
+    // eslint-disable-next-line no-console
+    console.log('Usage: npm start <rar-file-path> [output-directory] [password]')
+    // eslint-disable-next-line no-console
+    console.log('Example: npm start encryption.rar ./output 123')
     process.exit(1)
   }
 
   const rarFilePathArg = args[0]
   const outputDirArg = args[1] || './output'
+  const password = args[2] // Optional password parameter
 
   // Parse RAR file path
   // If absolute path, use it directly; otherwise try multiple possible paths
@@ -181,23 +201,33 @@ async function main() {
   const outputDir = isAbsolute(outputDirArg) ? outputDirArg : resolve(process.cwd(), outputDirArg)
 
   if (!existsSync(rarFilePath)) {
+    // eslint-disable-next-line no-console
     console.error(`❌ Error: File does not exist: ${rarFilePath}`)
+    // eslint-disable-next-line no-console
     console.error(`   Attempted path: ${rarFilePathArg}`)
+    // eslint-disable-next-line no-console
     console.error(`   Current working directory: ${process.cwd()}`)
     process.exit(1)
   }
 
   try {
+    // eslint-disable-next-line no-console
     console.log('🚀 UnRAR Node.js Demo\n')
+    // eslint-disable-next-line no-console
     console.log('='.repeat(50))
 
-    const files = await extractRarFile(rarFilePath, outputDir)
+    const files = await extractRarFile(rarFilePath, outputDir, password)
 
+    // eslint-disable-next-line no-console
     console.log('='.repeat(50))
+    // eslint-disable-next-line no-console
     console.log(`\n✨ Extraction complete!`)
+    // eslint-disable-next-line no-console
     console.log(`📊 Total: ${files.length} file(s)/directory(ies)`)
+    // eslint-disable-next-line no-console
     console.log(`📁 Output directory: ${outputDir}`)
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.error('\n❌ Error:', error instanceof Error ? error.message : String(error))
     process.exit(1)
   }
@@ -205,6 +235,7 @@ async function main() {
 
 // Run main function
 main().catch((error) => {
+  // eslint-disable-next-line no-console
   console.error('Uncaught error:', error)
   process.exit(1)
 })

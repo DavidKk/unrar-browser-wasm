@@ -1,4 +1,4 @@
-import { StatusType } from '@/app/page'
+import { StatusType } from '../types'
 
 interface StatusBannerProps {
   message: string

@@ -1,2 +1,9 @@
 packages:
   - 'packages/*'
+# 包说明:
+# - unrar-wasm: WASM 核心库
+# - vite-demo: Vite Demo
+# - nextjs-demo: Next.js Demo
+# - e2e-demo: E2E 测试 Demo
+# - node-demo: Node.js CLI Demo
+# - react-demo-shared: React Demo 公共模块（私有）

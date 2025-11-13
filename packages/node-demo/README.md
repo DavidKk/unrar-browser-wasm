@@ -7,6 +7,7 @@ English | [简体中文](./README.zh-CN.md)
 ## Features
 
 - Extract RAR files in Node.js environment
+- Support for both encrypted and unencrypted RAR files
 - Support for extracting all files and directories
 - Automatically save extracted files to a specified directory
 
@@ -20,35 +21,71 @@ pnpm install
 
 ### 2. Run Example
 
+**Extract unencrypted RAR file:**
+
 ```bash
-# Extract RAR file to default output directory (./output)
-pnpm start q.rar
+# Extract to default output directory (./output)
+pnpm start noencryption.rar
 
-# Extract RAR file to specified directory
-pnpm start q.rar ./my-output
-
-# Development mode (auto-reload)
-pnpm dev q.rar
+# Extract to specified directory
+pnpm start noencryption.rar ./my-output
 ```
 
+**Extract encrypted RAR file:**
+
+```bash
+# Extract encrypted RAR with password
+pnpm start encryption.rar ./my-output 123
+
+# Development mode (auto-reload)
+pnpm dev encryption.rar ./output 123
+```
+
+**Test Files Included:**
+
+- `noencryption.rar` - Unencrypted test file (no password required)
+- `encryption.rar` - Encrypted test file (password: `123`)
+
 ## Example Output
+
+**Unencrypted RAR:**
 
 ```
 🚀 UnRAR Node.js Demo
 
 ==================================================
 📦 Loading UnRAR module...
-📂 Reading RAR file: q.rar
+📂 Reading RAR file: noencryption.rar
 🔍 Opening archive...
 ✅ Archive validated successfully, extracting files...
 
-📄 example.txt (1.23 KB)
-📁 folder/ (Directory)
-📄 folder/nested.txt (456 B)
+📄 q/q.txt (6 B)
+📁 q (Directory)
 ==================================================
 
 ✨ Extraction complete!
-📊 Total: 3 file(s)/directory(ies)
+📊 Total: 2 file(s)/directory(ies)
+📁 Output directory: ./output
+```
+
+**Encrypted RAR:**
+
+```
+🚀 UnRAR Node.js Demo
+
+==================================================
+📦 Loading UnRAR module...
+📂 Reading RAR file: encryption.rar
+🔐 Password: ***
+🔍 Opening archive...
+✅ Archive validated successfully, extracting files...
+
+📄 encryption/encryption.txt (15 B)
+📁 encryption (Directory)
+==================================================
+
+✨ Extraction complete!
+📊 Total: 2 file(s)/directory(ies)
 📁 Output directory: ./output
 ```
 
@@ -68,12 +105,17 @@ const rarData = readFileSync('archive.rar')
 const FS = unrar.FS
 FS.writeFile('/temp.rar', new Uint8Array(rarData))
 
-// 3. Open archive
+// 3. Set password (if needed)
+if (password) {
+  unrar.setPassword(password)
+}
+
+// 4. Open archive
 const cmdData = new unrar.CommandData()
 const archive = new unrar.Archive(cmdData)
 archive.openFile('/temp.rar')
 
-// 4. Extract files
+// 5. Extract files
 while (archive.readHeader() > 0) {
   if (archive.getHeaderType() === unrar.HeaderType.HEAD_FILE) {
     const fileName = archive.getFileName()
@@ -83,7 +125,7 @@ while (archive.readHeader() > 0) {
   archive.seekToNext()
 }
 
-// 5. Cleanup
+// 6. Cleanup
 FS.unlink('/temp.rar')
 ```
 

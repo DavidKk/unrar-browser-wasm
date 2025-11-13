@@ -19,15 +19,21 @@ describe('UnRAR Web 环境测试', () => {
     // 模拟浏览器环境
     // 在 jsdom 环境中，需要确保 window 和 document 存在
     if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+      // eslint-disable-next-line no-console
       console.log('✓ jsdom 环境已就绪')
+      // eslint-disable-next-line no-console
       console.log('  - window:', typeof window)
+      // eslint-disable-next-line no-console
       console.log('  - document:', typeof document)
+      // eslint-disable-next-line no-console
       console.log('  - navigator:', typeof navigator)
     }
 
     // 初始化 unrar 模块
+    // eslint-disable-next-line no-console
     console.log('正在初始化 UnRAR 模块（浏览器环境）...')
     unrar = await getUnrarModule()
+    // eslint-disable-next-line no-console
     console.log('✓ UnRAR 模块初始化成功')
   }, 30000)
 
@@ -67,7 +73,7 @@ describe('UnRAR Web 环境测试', () => {
   })
 
   describe('RAR 文件操作测试', () => {
-    const testRarFile = join(__dirname, '../packages/node-demo/q.rar')
+    const testRarFile = join(__dirname, '../packages/node-demo/noencryption.rar')
 
     test('应该能够打开并验证 RAR 文件', () => {
       // 读取 RAR 文件
@@ -147,6 +153,7 @@ describe('UnRAR Web 环境测试', () => {
           const isDirectory = archive.isDirectory()
 
           files.push({ name, size, isDirectory })
+          // eslint-disable-next-line no-console
           console.log(`  ${isDirectory ? '📁' : '📄'} ${name} ${!isDirectory ? `(${size} bytes)` : ''}`)
         } else if (headerType === unrar.HeaderType.HEAD_ENDARC) {
           break
@@ -168,6 +175,7 @@ describe('UnRAR Web 环境测试', () => {
         }
       })
 
+      // eslint-disable-next-line no-console
       console.log(`  总计: ${files.length} 个文件/目录`)
 
       // 清理
@@ -211,6 +219,7 @@ describe('UnRAR Web 环境测试', () => {
             expect(data).toBeDefined()
             expect(data.length).toBe(dataSize)
 
+            // eslint-disable-next-line no-console
             console.log(`  ✓ 提取文件: ${name} (${dataSize} bytes)`)
             extractedFileCount++
           }
@@ -222,6 +231,7 @@ describe('UnRAR Web 环境测试', () => {
       }
 
       expect(extractedFileCount).toBeGreaterThan(0)
+      // eslint-disable-next-line no-console
       console.log(`  成功提取: ${extractedFileCount} 个文件`)
 
       // 清理

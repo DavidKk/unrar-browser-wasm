@@ -1,19 +1,12 @@
 import { useCallback, useState } from 'react'
 
-import { UnrarModule } from './useUnrarModule'
-
-export interface ExtractedFile {
-  name: string
-  size: number | bigint
-  isDirectory: boolean
-  data: Uint8Array | null
-}
+import { ExtractedFile, UnrarModule } from '../types'
 
 interface UseUnrarExtractorResult {
   extractedFiles: ExtractedFile[]
   isExtracting: boolean
   error: Error | null
-  extract: (file: File) => Promise<void>
+  extract: (file: File, password?: string) => Promise<void>
   clear: () => void
 }
 
@@ -23,9 +16,16 @@ export function useUnrarExtractor(module: UnrarModule | null): UseUnrarExtractor
   const [error, setError] = useState<Error | null>(null)
 
   const extractRarFile = useCallback(
-    async (arrayBuffer: ArrayBuffer): Promise<ExtractedFile[]> => {
+    async (arrayBuffer: ArrayBuffer, password?: string): Promise<ExtractedFile[]> => {
       if (!module) {
         throw new Error('UnRAR module not loaded')
+      }
+
+      // Set password if provided
+      if (password) {
+        module.setPassword(password)
+      } else {
+        module.setPassword('') // Clear password
       }
 
       const FS = module.FS
@@ -82,7 +82,7 @@ export function useUnrarExtractor(module: UnrarModule | null): UseUnrarExtractor
   )
 
   const extract = useCallback(
-    async (file: File) => {
+    async (file: File, password?: string) => {
       if (!module || isExtracting) return
 
       setIsExtracting(true)
@@ -91,7 +91,7 @@ export function useUnrarExtractor(module: UnrarModule | null): UseUnrarExtractor
 
       try {
         const arrayBuffer = await file.arrayBuffer()
-        const files = await extractRarFile(arrayBuffer)
+        const files = await extractRarFile(arrayBuffer, password)
         setExtractedFiles(files)
       } catch (err) {
         const error = err instanceof Error ? err : new Error(String(err))

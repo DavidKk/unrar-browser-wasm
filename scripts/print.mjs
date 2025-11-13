@@ -24,6 +24,7 @@ export const register =
     if (!(onlyShowInVerbose && !verbose)) {
        
        
+      // eslint-disable-next-line no-console
       console.log(logs)
     }
 
