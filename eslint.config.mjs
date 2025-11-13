@@ -15,6 +15,7 @@ export default [
       'packages/*/dist/**/*',
       'packages/*/node_modules/**/*',
       'dist/**/*',
+      'gh-pages/**/*',
       '**/*.wasm',
       '**/*.cpp',
     ],

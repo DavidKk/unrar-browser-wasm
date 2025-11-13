@@ -15,6 +15,8 @@
     "build:demo": "pnpm --filter @unrar-browser/demo build",
     "dev": "pnpm --filter @unrar-browser/demo dev",
     "dev:e2e": "pnpm --filter @unrar-browser/e2e-demo dev",
+    "dev:node": "pnpm --filter @unrar-browser/node-demo dev",
+    "node-demo": "pnpm --filter @unrar-browser/node-demo start",
     "test:e2e": "playwright test --reporter=list",
     "test:e2e:ui": "playwright test --ui",
     "test:e2e:debug": "playwright test --debug",
