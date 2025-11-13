@@ -64,6 +64,7 @@ All WASM-related code is marked with `'use client'` directive to ensure it runs 
 ### WASM Files
 
 Ensure the `public` directory contains the following WASM files:
+
 - `unrar.js` - UnRAR JavaScript wrapper
 - `unrar.wasm` - UnRAR WebAssembly module
 

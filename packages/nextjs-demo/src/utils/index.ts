@@ -11,4 +11,3 @@ export function formatFileSize(bytes: number | bigint): string {
 
   return `${fileSize.toFixed(2)} ${units[unitIndex]}`
 }
-

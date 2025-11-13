@@ -5,6 +5,7 @@
 ### 1. Module not found: Can't resolve 'module'
 
 **错误信息**：
+
 ```
 Module not found: Can't resolve 'module'
 Import trace for requested module:
@@ -35,11 +36,13 @@ webpack: (config, { isServer }) => {
 ### 2. WASM 文件加载失败
 
 **错误信息**：
+
 ```
 Failed to load unrar.js
 ```
 
 **原因**：
+
 - `public` 目录中缺少 WASM 文件
 - 文件路径不正确
 - 服务器未正确配置 WASM MIME 类型
@@ -47,18 +50,21 @@ Failed to load unrar.js
 **解决方案**：
 
 1. 确保 WASM 文件存在：
+
 ```bash
 ls -la packages/nextjs-demo/public/
 # 应该看到 unrar.js 和 unrar.wasm
 ```
 
 2. 如果文件不存在，从核心包复制：
+
 ```bash
 cp packages/unrar-wasm/build/unrar.js packages/nextjs-demo/public/
 cp packages/unrar-wasm/build/unrar.wasm packages/nextjs-demo/public/
 ```
 
 3. 重启开发服务器：
+
 ```bash
 pnpm dev:nextjs
 ```
@@ -70,6 +76,7 @@ pnpm dev:nextjs
 
 **解决方案**：
 WASM 模块是全局单例，修改相关代码后需要手动刷新页面：
+
 - 按 `Cmd+R` (macOS) 或 `Ctrl+R` (Windows/Linux)
 - 或在浏览器中点击刷新按钮
 
@@ -92,6 +99,7 @@ if (!unrarModule) {
 ### 5. 服务器端渲染错误
 
 **错误信息**：
+
 ```
 window is not defined
 document is not defined
@@ -103,11 +111,13 @@ document is not defined
 **解决方案**：
 
 1. 确保所有使用浏览器 API 的组件都标记为客户端组件：
+
 ```typescript
 'use client'
 ```
 
 2. 在 hooks 中添加浏览器环境检查：
+
 ```typescript
 useEffect(() => {
   if (typeof window === 'undefined') {
@@ -125,23 +135,27 @@ useEffect(() => {
 **解决方案**：
 
 1. 清理缓存：
+
 ```bash
 cd packages/nextjs-demo
 rm -rf .next node_modules
 ```
 
 2. 重新安装依赖：
+
 ```bash
 cd ../..
 pnpm install
 ```
 
 3. 确保核心包已构建：
+
 ```bash
 pnpm build
 ```
 
 4. 重新构建 Next.js 应用：
+
 ```bash
 pnpm build:nextjs
 ```
@@ -153,6 +167,7 @@ pnpm build:nextjs
 
 **注意事项**：
 静态导出模式有一些限制：
+
 - 不支持服务器端运行时功能
 - 不支持图片优化（需要使用 `next/legacy/image` 或外部服务）
 - 不支持国际化路由
@@ -176,6 +191,7 @@ console.log('[UnRAR] Module loaded:', loadedModule)
 ### 检查 WASM 文件
 
 在浏览器中直接访问 WASM 文件：
+
 - 开发环境：`http://localhost:3000/unrar.js`
 - 生产环境：`https://your-domain.com/unrar.js`
 
@@ -184,6 +200,7 @@ console.log('[UnRAR] Module loaded:', loadedModule)
 ### 网络面板
 
 打开浏览器开发者工具的"网络"标签，筛选 `.wasm` 文件：
+
 - 检查 HTTP 状态码（应该是 200）
 - 检查 Content-Type（应该是 `application/wasm`）
 - 检查文件大小（unrar.wasm 约 640KB）
@@ -199,4 +216,3 @@ console.log('[UnRAR] Module loaded:', loadedModule)
    - 操作系统和浏览器版本
    - Node.js 和 pnpm 版本
    - 重现步骤
-

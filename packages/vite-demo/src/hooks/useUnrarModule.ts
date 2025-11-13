@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
 import { getUnrarModule } from '@unrar-browser/core'
+import { useEffect, useState } from 'react'
 
 export interface UnrarModule {
   Archive: any

@@ -64,8 +64,8 @@ pnpm build
 ### WASM 文件
 
 确保 `public` 目录中包含以下 WASM 文件：
+
 - `unrar.js` - UnRAR JavaScript 包装器
 - `unrar.wasm` - UnRAR WebAssembly 模块
 
 这些文件需要从 `@unrar-browser/core` 包的构建输出中复制。在项目根目录运行构建命令后，文件会自动复制到正确位置。
-

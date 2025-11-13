@@ -9,6 +9,7 @@
 将 UnRAR 编译为 WebAssembly，让你可以在浏览器中直接解压 RAR 文件，无需服务器支持。
 
 **🌐 在线演示：**
+
 - [⚡ Vite 演示](https://davidkk.github.io/unrar-browser-wasm/vite-demo/) - 基于 Vite 的现代 React 应用
 - [▲ Next.js 演示](https://davidkk.github.io/unrar-browser-wasm/nextjs-demo/) - 服务端渲染演示
 - [🧪 E2E 测试演示](https://davidkk.github.io/unrar-browser-wasm/e2e-demo/) - 端到端测试演示
@@ -274,10 +275,7 @@ import { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 
 // 动态导入，禁用 SSR
-const UnrarComponent = dynamic(
-  () => import('./UnrarComponent'),
-  { ssr: false }
-)
+const UnrarComponent = dynamic(() => import('./UnrarComponent'), { ssr: false })
 
 export default function Page() {
   return <UnrarComponent />
@@ -374,6 +372,7 @@ export default function UnrarPage() {
 ```
 
 **关键要点**：
+
 1. ✅ **必须使用 `'use client'` 指令** - 确保代码只在客户端运行
 2. ✅ **配置 webpack fallback** - 忽略 Node.js 模块（fs, path, crypto, module 等）
 3. ✅ **使用 `useEffect` 加载模块** - 确保只在客户端执行

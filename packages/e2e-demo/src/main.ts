@@ -73,9 +73,7 @@ async function loadUnrarModule(): Promise<void> {
   try {
     log('Starting to load UnRAR WASM module', 'info')
     // 从 Vite 环境变量获取 base URL（如果可用）
-    const basePath = typeof import.meta !== 'undefined' && (import.meta as any).env?.BASE_URL 
-      ? (import.meta as any).env.BASE_URL 
-      : '/'
+    const basePath = typeof import.meta !== 'undefined' && (import.meta as any).env?.BASE_URL ? (import.meta as any).env.BASE_URL : '/'
     unrarModule = await getUnrarModule(basePath)
     log('UnRAR WASM module loaded successfully', 'success')
     moduleStatus.textContent = 'UnRAR WASM module loaded successfully ✓'
@@ -99,7 +97,7 @@ async function autoTestExtraction(): Promise<void> {
     const basePath = (import.meta as any).env?.BASE_URL || '/'
     const rarPath = `${basePath}q.rar`.replace(/\/+/g, '/') // 移除重复的斜杠
     log(`Fetching from: ${rarPath}`, 'debug')
-    
+
     const response = await fetch(rarPath)
     if (!response.ok) {
       throw new Error(`Failed to load file: ${response.status} ${response.statusText}`)

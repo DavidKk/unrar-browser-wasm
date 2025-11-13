@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
 import { getUnrarModule } from '@unrar-browser/core'
+import { useEffect, useState } from 'react'
 
 export interface UnrarModule {
   Archive: any
@@ -57,7 +57,7 @@ export function useUnrarModule(): UseUnrarModuleResult {
         if (typeof window !== 'undefined') {
           const pathname = window.location.pathname
           console.log('[useUnrarModule] Current pathname:', pathname)
-          
+
           // 如果路径包含 /nextjs-demo，说明是在子路径部署
           if (pathname.includes('/nextjs-demo')) {
             // 提取 basePath（包含 /nextjs-demo 部分，确保以斜杠结尾）
@@ -106,4 +106,3 @@ export function useUnrarModule(): UseUnrarModuleResult {
 
   return { module, loading, progress, error }
 }
-

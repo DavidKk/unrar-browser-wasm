@@ -1,5 +1,6 @@
-import { readFileSync, existsSync } from 'fs'
+import { existsSync, readFileSync } from 'fs'
 import { join } from 'path'
+
 import { getUnrarModule } from './helpers/unrar-loader'
 
 describe('UnRAR Node.js 环境测试', () => {
@@ -9,7 +10,7 @@ describe('UnRAR Node.js 环境测试', () => {
   beforeAll(async () => {
     // 设置超时时间，因为加载 WASM 模块可能需要一些时间
     jest.setTimeout(30000)
-    
+
     // 初始化 unrar 模块
     console.log('正在加载 UnRAR 模块...')
     unrar = await getUnrarModule()
@@ -40,7 +41,7 @@ describe('UnRAR Node.js 环境测试', () => {
     // 读取 RAR 文件
     const rarBuffer = readFileSync(testRarFile)
     const rarData = new Uint8Array(rarBuffer)
-    
+
     expect(rarData.length).toBeGreaterThan(0)
 
     // 写入虚拟文件系统
@@ -132,14 +133,14 @@ describe('UnRAR Node.js 环境测试', () => {
 
     // 验证至少有一个文件
     expect(files.length).toBeGreaterThan(0)
-    
+
     // 验证文件结构
-    files.forEach(file => {
+    files.forEach((file) => {
       expect(file.name).toBeDefined()
       expect(typeof file.name).toBe('string')
       expect(file.name.length).toBeGreaterThan(0)
       expect(typeof file.isDirectory).toBe('boolean')
-      
+
       if (!file.isDirectory) {
         expect(file.size).toBeGreaterThanOrEqual(0)
       }
@@ -183,9 +184,9 @@ describe('UnRAR Node.js 环境测试', () => {
           // 读取文件数据
           const fileData = archive.readFileData()
           const dataSize = fileData.size()
-          
+
           expect(dataSize).toBeGreaterThanOrEqual(0)
-          
+
           // 提取数据到 Uint8Array
           const data = new Uint8Array(dataSize)
           for (let i = 0; i < dataSize; i++) {
@@ -195,7 +196,7 @@ describe('UnRAR Node.js 环境测试', () => {
           // 验证提取的数据
           expect(data).toBeDefined()
           expect(data.length).toBe(dataSize)
-          
+
           console.log(`  ✓ 提取文件: ${name} (${dataSize} bytes)`)
           extractedFileCount++
         }
@@ -229,13 +230,13 @@ describe('UnRAR Node.js 环境测试', () => {
   test('应该能够正确处理无效的 RAR 文件', () => {
     const FS = unrar.FS
     const virtualPath = '/invalid.rar'
-    
+
     // 创建一个无效的 RAR 文件（随机数据）
     const invalidData = new Uint8Array(100)
     for (let i = 0; i < 100; i++) {
       invalidData[i] = Math.floor(Math.random() * 256)
     }
-    
+
     FS.writeFile(virtualPath, invalidData)
 
     // 尝试打开无效文件
@@ -243,7 +244,7 @@ describe('UnRAR Node.js 环境测试', () => {
     const archive = new unrar.Archive(cmdData)
 
     const openResult = archive.openFile(virtualPath)
-    
+
     // 可能打开成功，但验证应该失败
     if (openResult) {
       const isValidArchive = archive.isArchive(true)
@@ -258,7 +259,7 @@ describe('UnRAR Node.js 环境测试', () => {
     const { getUnrarModule: testGetUnrarModule } = await import('./helpers/unrar-loader')
     const unrar1 = await testGetUnrarModule()
     const unrar2 = await testGetUnrarModule()
-    
+
     // 验证返回的是同一个实例
     expect(unrar1).toBe(unrar2)
     expect(unrar1).toBe(unrar)

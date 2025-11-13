@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test'
+import { expect, test } from '@playwright/test'
 
 test.describe('UnRAR WASM Browser Tests', () => {
   test('should load WASM module successfully', async ({ page }) => {

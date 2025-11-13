@@ -1,6 +1,6 @@
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs'
-import { join, dirname, basename, resolve, isAbsolute } from 'path'
 import { getUnrarModule } from '@unrar-browser/core'
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs'
+import { basename, dirname, isAbsolute, join, resolve } from 'path'
 
 interface ExtractedFile {
   name: string
@@ -149,7 +149,7 @@ async function main() {
     const cwd = process.cwd()
     // First try relative to current working directory
     rarFilePath = resolve(cwd, rarFilePathArg)
-    
+
     if (!existsSync(rarFilePath)) {
       // If path contains packages/, it might be passed from root directory
       // Try to resolve from project root directory
@@ -178,9 +178,7 @@ async function main() {
   }
 
   // Parse output directory
-  const outputDir = isAbsolute(outputDirArg) 
-    ? outputDirArg 
-    : resolve(process.cwd(), outputDirArg)
+  const outputDir = isAbsolute(outputDirArg) ? outputDirArg : resolve(process.cwd(), outputDirArg)
 
   if (!existsSync(rarFilePath)) {
     console.error(`❌ Error: File does not exist: ${rarFilePath}`)
@@ -210,4 +208,3 @@ main().catch((error) => {
   console.error('Uncaught error:', error)
   process.exit(1)
 })
-

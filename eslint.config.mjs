@@ -1,8 +1,10 @@
 import importPlugin from 'eslint-plugin-import'
 import prettierPlugin from 'eslint-plugin-prettier'
-import tsConfig from './eslintrc/ts.mjs'
+import simpleImportSort from 'eslint-plugin-simple-import-sort'
+
 import cjsConfig from './eslintrc/cjs.mjs'
 import esmConfig from './eslintrc/esm.mjs'
+import tsConfig from './eslintrc/ts.mjs'
 
 export default [
   {
@@ -36,6 +38,7 @@ export default [
     plugins: {
       'eslint-plugin-import': importPlugin,
       'eslint-plugin-prettier': prettierPlugin,
+      'simple-import-sort': simpleImportSort,
     },
     rules: {
       'max-len': [
@@ -50,6 +53,10 @@ export default [
       ],
       semi: ['error', 'never'],
       'no-console': 'off', // 允许 console，开发工具需要
+      'simple-import-sort/imports': 'error',
+      'simple-import-sort/exports': 'error',
+      'eslint-plugin-import/first': 'off',
+      'eslint-plugin-import/newline-after-import': 'off',
       'eslint-plugin-import/no-duplicates': 'warn',
       'eslint-plugin-import/no-extraneous-dependencies': [
         'warn',
@@ -61,6 +68,7 @@ export default [
             'scripts/**/*.mjs',
             'jest/**/*.ts',
             '.cz-config.js',
+            'eslint.config.mjs',
             '**/eslint.config.mjs',
             '**/vite.config.js',
             '**/vite.config.ts',
