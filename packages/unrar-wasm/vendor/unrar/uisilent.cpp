@@ -33,16 +33,29 @@ void uiMsgStore::Msg()
 }
 
 
+// 外部声明的全局密码（在 unrar.cpp 中定义）
+extern char globalPassword[256];
+
 bool uiGetPassword(UIPASSWORD_TYPE Type,const std::wstring &FileName,
                    SecPassword *Password,CheckPassword *CheckPwd)
 {
+  // 如果全局密码已设置,使用它
+  if (globalPassword[0] != '\0') {
+    // 将 char* 转换为 wchar_t*
+    std::wstring wpassword;
+    for (int i = 0; globalPassword[i] != '\0'; i++) {
+      wpassword += (wchar_t)globalPassword[i];
+    }
+    Password->Set(wpassword.c_str());
+    return true;
+  }
   return false;
 }
 
 
 bool uiIsGlobalPasswordSet()
 {
-  return false;
+  return globalPassword[0] != '\0';
 }
 
 

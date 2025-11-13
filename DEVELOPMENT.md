@@ -240,7 +240,7 @@ gh-pages/
 └── e2e-demo/
     ├── assets/
     ├── index.html
-    ├── q.rar
+    ├── encryption.rar
     ├── unrar.js
     └── unrar.wasm
 ```
@@ -317,7 +317,7 @@ unrar-browser-wasm/
 │   │   ├── public/          # 静态资源（包含 WASM 文件和测试文件）
 │   │   └── dist/            # 构建输出
 │   └── node-demo/           # Node.js 演示
-│       └── q.rar            # 测试文件
+│       └── encryption.rar   # 测试文件（带密码）
 ├── __tests__/               # 单元测试
 ├── __webtests__/            # Web 测试
 ├── __e2etests__/            # E2E 测试

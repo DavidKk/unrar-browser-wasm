@@ -5,7 +5,8 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_EXECUTABLE_SUFFIX ".js")
 
 # 添加编译定义
-add_definitions(-D_UNIX -DRARDLL -DNOCRYPT -DNOVOLUME -DSILENT -DRAR_NOCRYPT)
+# 移除 -DNOCRYPT 和 -DRAR_NOCRYPT 以启用加密支持
+add_definitions(-D_UNIX -DRARDLL -DNOVOLUME -DSILENT)
 
 include_directories(vendor/unrar)
 
@@ -48,6 +49,7 @@ add_executable(unrar
   vendor/unrar/cmddata.cpp
   vendor/unrar/dll.cpp
   vendor/unrar/crypt.cpp
+  vendor/unrar/rijndael.cpp
   vendor/unrar/filestr.cpp
   vendor/unrar/threadpool.cpp
   vendor/unrar/largepage.cpp

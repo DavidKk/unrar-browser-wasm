@@ -5,7 +5,7 @@ import { getUnrarModule } from './helpers/unrar-loader'
 
 describe('UnRAR Node.js 环境测试', () => {
   let unrar: any
-  const testRarFile = join(__dirname, '../packages/node-demo/q.rar')
+  const testRarFile = join(__dirname, '../packages/node-demo/noencryption.rar')
 
   beforeAll(async () => {
     // 设置超时时间，因为加载 WASM 模块可能需要一些时间

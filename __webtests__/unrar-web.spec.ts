@@ -67,7 +67,7 @@ describe('UnRAR Web 环境测试', () => {
   })
 
   describe('RAR 文件操作测试', () => {
-    const testRarFile = join(__dirname, '../packages/node-demo/q.rar')
+    const testRarFile = join(__dirname, '../packages/node-demo/noencryption.rar')
 
     test('应该能够打开并验证 RAR 文件', () => {
       // 读取 RAR 文件

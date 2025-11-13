@@ -12,11 +12,22 @@ interface ExtractedFile {
 /**
  * Extract all files from RAR archive
  */
-async function extractRarFile(rarFilePath: string, outputDir?: string): Promise<ExtractedFile[]> {
+async function extractRarFile(
+  rarFilePath: string,
+  outputDir?: string,
+  password?: string,
+): Promise<ExtractedFile[]> {
   console.log(`📦 Loading UnRAR module...`)
   const unrar = await getUnrarModule()
 
   console.log(`📂 Reading RAR file: ${rarFilePath}`)
+  
+  // Set password if provided
+  if (password) {
+    console.log(`🔐 Password: ${'*'.repeat(password.length)}`)
+    unrar.setPassword(password)
+  }
+  
   const rarBuffer = readFileSync(rarFilePath)
   const rarData = new Uint8Array(rarBuffer)
 
@@ -132,13 +143,14 @@ async function main() {
   const args = process.argv.slice(2)
 
   if (args.length === 0) {
-    console.log('Usage: npm start <rar-file-path> [output-directory]')
-    console.log('Example: npm start q.rar ./output')
+    console.log('Usage: npm start <rar-file-path> [output-directory] [password]')
+    console.log('Example: npm start encryption.rar ./output 123')
     process.exit(1)
   }
 
   const rarFilePathArg = args[0]
   const outputDirArg = args[1] || './output'
+  const password = args[2] // Optional password parameter
 
   // Parse RAR file path
   // If absolute path, use it directly; otherwise try multiple possible paths
@@ -191,7 +203,7 @@ async function main() {
     console.log('🚀 UnRAR Node.js Demo\n')
     console.log('='.repeat(50))
 
-    const files = await extractRarFile(rarFilePath, outputDir)
+    const files = await extractRarFile(rarFilePath, outputDir, password)
 
     console.log('='.repeat(50))
     console.log(`\n✨ Extraction complete!`)

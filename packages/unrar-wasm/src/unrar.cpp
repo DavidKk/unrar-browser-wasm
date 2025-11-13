@@ -5,8 +5,8 @@
 
 using namespace emscripten;
 
-// 用于设置密码的全局变量
-static char globalPassword[256] = {0};
+// 用于设置密码的全局变量（移除 static 以便其他编译单元访问）
+char globalPassword[256] = {0};
 
 void setPassword(const std::string& password) {
     strncpy(globalPassword, password.c_str(), sizeof(globalPassword) - 1);
@@ -53,6 +53,16 @@ public:
     }
     
     bool openFile(const std::string& fileName) {
+        // 打开文件前，将全局密码设置到 CommandData 中
+        if (globalPassword[0] != '\0') {
+            std::wstring wpassword;
+            for (int i = 0; globalPassword[i] != '\0'; i++) {
+                wpassword += (wchar_t)globalPassword[i];
+            }
+            cmd->Password.Set(wpassword.c_str());
+            std::cout << "密码已设置到 CommandData" << std::endl;
+        }
+        
         std::wstring wfileName(fileName.begin(), fileName.end());
         opened = arc->Open(wfileName.c_str(), 0);
         return opened;
@@ -107,6 +117,9 @@ std::vector<uint8_t> readSubData(Archive& arc) {
     data.resize(dataSize);
     
     std::cout << "方法值: 0x" << std::hex << arc.FileHead.Method << std::dec << std::endl;
+    std::cout << "文件是否加密: " << (arc.FileHead.Encrypted ? "是" : "否") << std::endl;
+    std::cout << "加密方法: " << arc.FileHead.CryptMethod << std::endl;
+    std::cout << "是否有盐值: " << (arc.FileHead.SaltSet ? "是" : "否") << std::endl;
     
     // 简单实现：尝试读取原始数据
     // 对于存储模式（未压缩），直接读取
@@ -124,13 +137,35 @@ std::vector<uint8_t> readSubData(Archive& arc) {
     } else {
         std::cout << "使用解压模式" << std::endl;
         // 对于压缩文件，使用 Unpack
-        CommandData cmdData;
         ComprDataIO dataIO;
         
         // 设置文件
         dataIO.SetFiles(&arc, nullptr);
         dataIO.SetUnpackToMemory(data.data(), dataSize);
         dataIO.SetPackedSizeToRead(arc.FileHead.PackSize);
+        
+        // 设置加密 (如果文件是加密的)
+        if (arc.FileHead.Encrypted) {
+            std::cout << "文件已加密，设置解密参数" << std::endl;
+            CommandData* cmd = arc.GetCommandData();
+            if (cmd != nullptr) {
+                SecPassword FilePassword = cmd->Password;
+                byte PswCheck[SIZE_PSWCHECK];
+                bool EncSet = dataIO.SetEncryption(
+                    false,  // Decrypt mode
+                    arc.FileHead.CryptMethod,
+                    &FilePassword,
+                    arc.FileHead.SaltSet ? arc.FileHead.Salt : nullptr,
+                    arc.FileHead.InitV,
+                    arc.FileHead.Lg2Count,
+                    arc.FileHead.HashKey,
+                    PswCheck
+                );
+                std::cout << "SetEncryption 返回: " << EncSet << std::endl;
+            } else {
+                std::cout << "警告：无法获取 CommandData！" << std::endl;
+            }
+        }
         
         // 创建并初始化 Unpack 对象
         Unpack unpack(&dataIO);

@@ -24,8 +24,16 @@ pnpm --filter @unrar-browser/e2e-demo dev
 
 ## Testing
 
-The demo automatically loads `q.rar` and displays:
+The demo automatically loads and extracts **two test files** side-by-side:
+
+1. **noencryption.rar** - Unencrypted RAR file (no password required)
+2. **encryption.rar** - Encrypted RAR file (password: `123`)
+
+Both extractions run automatically on page load and display:
 
 - File list with sizes
 - Content previews (hex and text)
 - Warnings for empty or invalid content
+- Side-by-side comparison of encrypted vs. unencrypted extraction
+
+This dual-extraction setup is designed for automated E2E testing with Playwright.

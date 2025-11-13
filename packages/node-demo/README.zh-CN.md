@@ -7,6 +7,7 @@
 ## 功能
 
 - 在 Node.js 环境中提取 RAR 文件
+- 支持加密和无加密的 RAR 文件
 - 支持提取所有文件和目录
 - 自动保存提取的文件到指定目录
 
@@ -20,35 +21,66 @@ pnpm install
 
 ### 2. 运行示例
 
+**提取无加密 RAR 文件：**
 ```bash
-# 提取 RAR 文件到默认输出目录 (./output)
-pnpm start q.rar
+# 提取到默认输出目录 (./output)
+pnpm start noencryption.rar
 
-# 提取 RAR 文件到指定目录
-pnpm start q.rar ./my-output
+# 提取到指定目录
+pnpm start noencryption.rar ./my-output
+```
+
+**提取加密 RAR 文件：**
+```bash
+# 提取加密 RAR 文件（带密码）
+pnpm start encryption.rar ./my-output 123
 
 # 开发模式（自动重新加载）
-pnpm dev q.rar
+pnpm dev encryption.rar ./output 123
 ```
+
+**包含的测试文件：**
+- `noencryption.rar` - 无加密测试文件（无需密码）
+- `encryption.rar` - 加密测试文件（密码: `123`）
 
 ## 示例输出
 
+**无加密 RAR：**
 ```
 🚀 UnRAR Node.js Demo
 
 ==================================================
 📦 Loading UnRAR module...
-📂 Reading RAR file: q.rar
+📂 Reading RAR file: noencryption.rar
 🔍 Opening archive...
 ✅ Archive validated successfully, extracting files...
 
-📄 example.txt (1.23 KB)
-📁 folder/ (Directory)
-📄 folder/nested.txt (456 B)
+📄 q/q.txt (6 B)
+📁 q (Directory)
 ==================================================
 
 ✨ Extraction complete!
-📊 Total: 3 file(s)/directory(ies)
+📊 Total: 2 file(s)/directory(ies)
+📁 Output directory: ./output
+```
+
+**加密 RAR：**
+```
+🚀 UnRAR Node.js Demo
+
+==================================================
+📦 Loading UnRAR module...
+📂 Reading RAR file: encryption.rar
+🔐 密码: ***
+🔍 Opening archive...
+✅ Archive validated successfully, extracting files...
+
+📄 encryption/encryption.txt (15 B)
+📁 encryption (Directory)
+==================================================
+
+✨ Extraction complete!
+📊 Total: 2 file(s)/directory(ies)
 📁 Output directory: ./output
 ```
 
@@ -68,12 +100,17 @@ const rarData = readFileSync('archive.rar')
 const FS = unrar.FS
 FS.writeFile('/temp.rar', new Uint8Array(rarData))
 
-// 3. 打开归档
+// 3. 设置密码（如果需要）
+if (password) {
+  unrar.setPassword(password)
+}
+
+// 4. 打开归档
 const cmdData = new unrar.CommandData()
 const archive = new unrar.Archive(cmdData)
 archive.openFile('/temp.rar')
 
-// 4. 提取文件
+// 5. 提取文件
 while (archive.readHeader() > 0) {
   if (archive.getHeaderType() === unrar.HeaderType.HEAD_FILE) {
     const fileName = archive.getFileName()
@@ -83,7 +120,7 @@ while (archive.readHeader() > 0) {
   archive.seekToNext()
 }
 
-// 5. 清理
+// 6. 清理
 FS.unlink('/temp.rar')
 ```
 
