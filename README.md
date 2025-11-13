@@ -12,6 +12,7 @@ Compile UnRAR to WebAssembly, allowing you to extract RAR files directly in the 
 - [⚡ Vite Demo](https://davidkk.github.io/unrar-browser-wasm/vite-demo/) - Modern React demo with Vite
 - [▲ Next.js Demo](https://davidkk.github.io/unrar-browser-wasm/nextjs-demo/) - Server-side rendered demo
 - [🧪 E2E Test Demo](https://davidkk.github.io/unrar-browser-wasm/e2e-demo/) - End-to-end testing demo
+
 English | [简体中文](./README.zh-CN.md)
 
 ## ✨ Features
