@@ -16,6 +16,7 @@ function App() {
   const { extractedFiles, isExtracting, error: extractError, extract, clear } = useUnrarExtractor(unrarModule)
   const [statusMessage, setStatusMessage] = useState<{ message: string; type: StatusType } | null>(null)
   const [selectedFile, setSelectedFile] = useState<File | null>(null)
+  const [password, setPassword] = useState('')
 
   const showStatus = useCallback((message: string, type: StatusType) => {
     setStatusMessage({ message, type })
@@ -47,8 +48,8 @@ function App() {
 
   const handleExtract = async () => {
     if (!selectedFile) return
-    showStatus('Extracting files...', 'info')
-    await extract(selectedFile)
+    showStatus(password ? 'Extracting encrypted files...' : 'Extracting files...', 'info')
+    await extract(selectedFile, password)
   }
 
   return (
@@ -61,10 +62,13 @@ function App() {
           selectedFile={selectedFile}
           isExtracting={isExtracting}
           moduleLoaded={!!unrarModule}
+          password={password}
+          onPasswordChange={setPassword}
           onFileSelect={handleFileSelect}
           onExtract={handleExtract}
           onClear={() => {
             setSelectedFile(null)
+            setPassword('')
             clear()
           }}
         />

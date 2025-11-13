@@ -22,6 +22,7 @@ pnpm install
 ### 2. Run Example
 
 **Extract unencrypted RAR file:**
+
 ```bash
 # Extract to default output directory (./output)
 pnpm start noencryption.rar
@@ -31,6 +32,7 @@ pnpm start noencryption.rar ./my-output
 ```
 
 **Extract encrypted RAR file:**
+
 ```bash
 # Extract encrypted RAR with password
 pnpm start encryption.rar ./my-output 123
@@ -40,12 +42,14 @@ pnpm dev encryption.rar ./output 123
 ```
 
 **Test Files Included:**
+
 - `noencryption.rar` - Unencrypted test file (no password required)
 - `encryption.rar` - Encrypted test file (password: `123`)
 
 ## Example Output
 
 **Unencrypted RAR:**
+
 ```
 🚀 UnRAR Node.js Demo
 
@@ -65,6 +69,7 @@ pnpm dev encryption.rar ./output 123
 ```
 
 **Encrypted RAR:**
+
 ```
 🚀 UnRAR Node.js Demo
 

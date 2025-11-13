@@ -22,6 +22,7 @@ pnpm install
 ### 2. 运行示例
 
 **提取无加密 RAR 文件：**
+
 ```bash
 # 提取到默认输出目录 (./output)
 pnpm start noencryption.rar
@@ -31,6 +32,7 @@ pnpm start noencryption.rar ./my-output
 ```
 
 **提取加密 RAR 文件：**
+
 ```bash
 # 提取加密 RAR 文件（带密码）
 pnpm start encryption.rar ./my-output 123
@@ -40,12 +42,14 @@ pnpm dev encryption.rar ./output 123
 ```
 
 **包含的测试文件：**
+
 - `noencryption.rar` - 无加密测试文件（无需密码）
 - `encryption.rar` - 加密测试文件（密码: `123`）
 
 ## 示例输出
 
 **无加密 RAR：**
+
 ```
 🚀 UnRAR Node.js Demo
 
@@ -65,6 +69,7 @@ pnpm dev encryption.rar ./output 123
 ```
 
 **加密 RAR：**
+
 ```
 🚀 UnRAR Node.js Demo
 

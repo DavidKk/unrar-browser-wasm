@@ -93,43 +93,43 @@ async function loadUnrarModule(): Promise<void> {
 async function autoTestExtraction(): Promise<void> {
   try {
     log('=== Starting automatic dual test ===', 'info')
-    
+
     const basePath = (import.meta as any).env?.BASE_URL || '/'
-    
+
     // 测试 1: 无加密 RAR
     log('--- Test 1: Loading noencryption.rar (no password) ---', 'info')
     const noencPath = `${basePath}noencryption.rar`.replace(/\/+/g, '/')
     log(`Fetching from: ${noencPath}`, 'debug')
-    
+
     const noencResponse = await fetch(noencPath)
     if (!noencResponse.ok) {
       throw new Error(`Failed to load noencryption.rar: ${noencResponse.status}`)
     }
-    
+
     const noencBuffer = await noencResponse.arrayBuffer()
     log(`noencryption.rar loaded, size: ${formatFileSize(noencBuffer.byteLength)}`, 'info')
-    
+
     const noencFiles = await extractRarFile(noencBuffer, '', 'noencryption.rar')
     displayExtractedFiles(noencFiles, noencResults, 'No Encryption')
     log('✓ Test 1 completed', 'success')
-    
+
     // 测试 2: 加密 RAR
     log('--- Test 2: Loading encryption.rar (with password) ---', 'info')
     const encPath = `${basePath}encryption.rar`.replace(/\/+/g, '/')
     log(`Fetching from: ${encPath}`, 'debug')
-    
+
     const encResponse = await fetch(encPath)
     if (!encResponse.ok) {
       throw new Error(`Failed to load encryption.rar: ${encResponse.status}`)
     }
-    
+
     const encBuffer = await encResponse.arrayBuffer()
     log(`encryption.rar loaded, size: ${formatFileSize(encBuffer.byteLength)}`, 'info')
-    
+
     const encFiles = await extractRarFile(encBuffer, '123', 'encryption.rar')
     displayExtractedFiles(encFiles, encResults, 'Encrypted')
     log('✓ Test 2 completed', 'success')
-    
+
     // 显示结果区域
     results.classList.remove('hidden')
     showStatus('All tests completed successfully!', 'success')
@@ -142,12 +142,7 @@ async function autoTestExtraction(): Promise<void> {
   }
 }
 
-
-async function extractRarFile(
-  arrayBuffer: ArrayBuffer,
-  password = '',
-  fileName = 'archive.rar',
-): Promise<ExtractedFile[]> {
+async function extractRarFile(arrayBuffer: ArrayBuffer, password = '', fileName = 'archive.rar'): Promise<ExtractedFile[]> {
   if (!unrarModule) {
     throw new Error('UnRAR WASM module not loaded')
   }
@@ -371,19 +366,19 @@ function displayExtractedFiles(files: ExtractedFile[], container: HTMLElement, t
 // Global download function
 ;(window as any).downloadFile = (fileName: string, index: number, testType?: string) => {
   let files: ExtractedFile[] | undefined
-  
+
   // Try to get files from the specific test type
   if (testType && (window as any).extractedFilesByTest) {
     files = (window as any).extractedFilesByTest[testType]
   }
-  
+
   // Fallback to old approach
   if (!files) {
     files = (window as any).extractedFiles as ExtractedFile[]
   }
-  
+
   if (!files || !files[index]) return
-  
+
   const file = files[index]
   if (!file || !file.content) return
 

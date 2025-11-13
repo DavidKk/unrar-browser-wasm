@@ -12,22 +12,18 @@ interface ExtractedFile {
 /**
  * Extract all files from RAR archive
  */
-async function extractRarFile(
-  rarFilePath: string,
-  outputDir?: string,
-  password?: string,
-): Promise<ExtractedFile[]> {
+async function extractRarFile(rarFilePath: string, outputDir?: string, password?: string): Promise<ExtractedFile[]> {
   console.log(`📦 Loading UnRAR module...`)
   const unrar = await getUnrarModule()
 
   console.log(`📂 Reading RAR file: ${rarFilePath}`)
-  
+
   // Set password if provided
   if (password) {
     console.log(`🔐 Password: ${'*'.repeat(password.length)}`)
     unrar.setPassword(password)
   }
-  
+
   const rarBuffer = readFileSync(rarFilePath)
   const rarData = new Uint8Array(rarBuffer)
 

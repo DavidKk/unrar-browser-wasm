@@ -6,12 +6,14 @@ interface UploadCardProps {
   selectedFile: File | null
   isExtracting: boolean
   moduleLoaded: boolean
+  password: string
+  onPasswordChange: (password: string) => void
   onFileSelect: (file: File) => void
   onExtract: () => void
   onClear: () => void
 }
 
-export default function UploadCard({ selectedFile, isExtracting, moduleLoaded, onFileSelect, onExtract, onClear }: UploadCardProps) {
+export default function UploadCard({ selectedFile, isExtracting, moduleLoaded, password, onPasswordChange, onFileSelect, onExtract, onClear }: UploadCardProps) {
   const fileInputRef = useRef<HTMLInputElement>(null)
   const [isDragging, setIsDragging] = useState(false)
 
@@ -73,6 +75,22 @@ export default function UploadCard({ selectedFile, isExtracting, moduleLoaded, o
                 ×
               </button>
             </div>
+          </div>
+
+          <div className="mb-3">
+            <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
+              Password (optional)
+            </label>
+            <input
+              id="password"
+              type="text"
+              value={password}
+              onChange={(e) => onPasswordChange(e.target.value)}
+              placeholder="Enter password if RAR is encrypted"
+              className="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+              disabled={isExtracting}
+            />
+            <p className="text-xs text-gray-500 mt-1">Leave empty for unencrypted RAR files</p>
           </div>
 
           <button

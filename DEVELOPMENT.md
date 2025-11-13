@@ -15,11 +15,11 @@
 # 安装依赖
 pnpm install
 
-# 构建 WASM 核心库
+# 构建 WASM 核心库 + 自动分发到所有 demo
 pnpm build
 
-# 构建所有演示项目
-pnpm build:demos
+# 只构建 WASM（不分发到 demo）
+pnpm build:wasm
 
 # 运行开发服务器（Vite Demo）
 pnpm dev
@@ -97,9 +97,31 @@ pnpm node-demo path/to/file.rar ./output
 
 ### 🏗️ 构建命令
 
-#### `pnpm build`
+#### `pnpm build` ⭐
 
-**用途**：构建 WASM 核心库（@unrar-browser/core）  
+**用途**：构建 WASM 核心库 + 自动分发到所有 demo  
+**执行流程**：
+
+1. 构建 WASM 核心库（@unrar-browser/core）
+2. 自动复制 WASM 文件到 e2e-demo/public/
+3. 自动复制 WASM 文件到 vite-demo/public/
+4. 自动复制 WASM 文件到 nextjs-demo/public/
+
+**输出**：
+
+- `packages/unrar-wasm/build/unrar.js` - WASM 加载器
+- `packages/unrar-wasm/build/unrar.wasm` - WebAssembly 二进制文件
+- 各 demo 的 `public/` 目录下的副本
+
+```bash
+pnpm build
+```
+
+**推荐场景**：修改了 C++ 代码后，需要重新构建并更新所有 demo
+
+#### `pnpm build:wasm`
+
+**用途**：仅构建 WASM 核心库（不分发到 demo）  
 **输出**：`packages/unrar-wasm/build/`  
 **包含**：
 
@@ -107,42 +129,55 @@ pnpm node-demo path/to/file.rar ./output
 - `unrar.wasm` - WebAssembly 二进制文件
 
 ```bash
-pnpm build
+pnpm build:wasm
 ```
 
-#### `pnpm build:demos`
+**推荐场景**：
 
-**用途**：构建所有演示项目  
-**执行流程**：
-
-1. `prepare:e2e` - 复制 WASM 文件到 e2e-demo
-2. `prepare:vite-demo` - 复制 WASM 文件到 vite-demo
-3. `prepare:nextjs-demo` - 复制 WASM 文件到 nextjs-demo
-4. 构建 vite-demo
-5. 构建 e2e-demo
-6. 构建 nextjs-demo
-
-```bash
-pnpm build:demos
-```
+- 只想构建 WASM，不需要更新 demo
+- CI/CD 流程中需要单独构建
 
 ### 📦 准备命令（Prepare）
 
 这些命令用于将最新的 WASM 文件复制到各个演示项目的 `public/` 目录。
 
+#### `pnpm prepare:all`
+
+**用途**：一键复制 WASM 文件到所有 demo  
+**说明**：相当于依次执行 `prepare:e2e`、`prepare:vite-demo` 和 `prepare:nextjs-demo`
+
+```bash
+pnpm prepare:all
+```
+
 #### `pnpm prepare:e2e`
 
-复制 WASM 文件到 `packages/e2e-demo/public/`
+**用途**：复制 WASM 文件到 `packages/e2e-demo/public/`
+
+```bash
+pnpm prepare:e2e
+```
 
 #### `pnpm prepare:vite-demo`
 
-复制 WASM 文件到 `packages/vite-demo/public/`
+**用途**：复制 WASM 文件到 `packages/vite-demo/public/`
+
+```bash
+pnpm prepare:vite-demo
+```
 
 #### `pnpm prepare:nextjs-demo`
 
-复制 WASM 文件到 `packages/nextjs-demo/public/`
+**用途**：复制 WASM 文件到 `packages/nextjs-demo/public/`
 
-> **注意**：`predev:*` 和 `pretest:e2e` 会自动调用相应的 prepare 命令，通常不需要手动执行。
+```bash
+pnpm prepare:nextjs-demo
+```
+
+> **注意**：
+>
+> - `pnpm build` 会自动调用 `prepare:all`，通常不需要手动执行准备命令
+> - `predev:*` 和 `pretest:e2e` 会自动调用相应的 prepare 命令
 
 ### 🧪 测试命令
 

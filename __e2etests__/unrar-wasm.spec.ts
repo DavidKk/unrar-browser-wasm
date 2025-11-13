@@ -92,7 +92,7 @@ test.describe('UnRAR WASM Browser Tests', () => {
 
     // Should contain encryption
     expect(fileText).toContain('encryption')
-    
+
     // Check file content
     const hasContent = (await firstFile.locator('pre').count()) > 0
     if (hasContent) {
@@ -126,7 +126,7 @@ test.describe('UnRAR WASM Browser Tests', () => {
 
     // Wait for module to load
     await page.waitForSelector('#moduleStatus:has-text("loaded successfully")', { timeout: 30000 })
-    
+
     // Wait for extraction (automatic)
     await page.waitForSelector('.status.success', { timeout: 15000 })
 
@@ -138,5 +138,4 @@ test.describe('UnRAR WASM Browser Tests', () => {
     expect(fileName).toContain('encryption')
     console.log('✅ File name is correct')
   })
-
 })
