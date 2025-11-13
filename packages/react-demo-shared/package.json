@@ -1,6 +1,6 @@
 {
   "name": "@unrar-browser/react-demo-shared",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "private": true,
   "description": "Shared components and utilities for React demos (source only, no build)",
   "main": "src/index.ts",

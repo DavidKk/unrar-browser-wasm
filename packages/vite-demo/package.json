@@ -1,6 +1,6 @@
 {
   "name": "@unrar-browser/vite-demo",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "description": "Vite demo for UnRAR Browser",
   "type": "module",

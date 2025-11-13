@@ -1,6 +1,6 @@
 {
   "name": "@unrar-browser/e2e-demo",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "description": "E2E test demo for UnRAR WASM",
   "type": "module",
