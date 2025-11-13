@@ -2,6 +2,8 @@
 
 E2E test demo for @unrar-browser/core library. This demo is used by Playwright for automated testing.
 
+English | [简体中文](./README.zh-CN.md)
+
 ## Development
 
 ```bash

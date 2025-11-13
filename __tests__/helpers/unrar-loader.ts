@@ -36,7 +36,7 @@ export async function getUnrarModule(): Promise<UnrarModule> {
       
       try {
         // 在 Jest 环境中，可以直接使用 require
-        // eslint-disable-next-line @typescript-eslint/no-var-requires
+         
         unrarFactory = require(buildPath)
       } catch (error) {
         throw new Error(`无法加载 UnRAR 模块: ${buildPath}\n错误: ${error}`)

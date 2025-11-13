@@ -34,7 +34,7 @@ export async function getUnrarModule(): Promise<UnrarModule> {
       let unrarFactory: any
       
       try {
-        // eslint-disable-next-line @typescript-eslint/no-var-requires
+         
         unrarFactory = require(buildPath)
         
         // 将工厂函数挂载到全局 window.Module（模拟浏览器行为）

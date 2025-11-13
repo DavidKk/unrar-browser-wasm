@@ -157,7 +157,7 @@ The project uses TypeScript project references for efficient type checking:
 
 - **Root `tsconfig.json`**: Base configuration
 - **`packages/unrar-wasm/tsconfig.json`**: WASM library config
-- **`packages/demo/tsconfig.json`**: Demo app config
+- **`packages/vite-demo/tsconfig.json`**: Vite demo app config
 - **`packages/e2e-demo/tsconfig.json`**: E2E demo config
 
 Each package extends the root config and defines its own `include` and `references`.

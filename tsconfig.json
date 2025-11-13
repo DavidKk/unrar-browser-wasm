@@ -17,5 +17,5 @@
   },
   "include": [],
   "exclude": ["node_modules", "dist", "build"],
-  "references": [{ "path": "./packages/unrar-wasm" }, { "path": "./packages/demo" }, { "path": "./packages/e2e-demo" }]
+  "references": [{ "path": "./packages/unrar-wasm" }, { "path": "./packages/vite-demo" }, { "path": "./packages/e2e-demo" }]
 }

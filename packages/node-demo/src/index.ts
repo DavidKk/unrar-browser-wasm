@@ -10,36 +10,36 @@ interface ExtractedFile {
 }
 
 /**
- * 从 RAR 文件中提取所有文件
+ * Extract all files from RAR archive
  */
 async function extractRarFile(rarFilePath: string, outputDir?: string): Promise<ExtractedFile[]> {
-  console.log(`📦 正在加载 UnRAR 模块...`)
+  console.log(`📦 Loading UnRAR module...`)
   const unrar = await getUnrarModule()
 
-  console.log(`📂 正在读取 RAR 文件: ${rarFilePath}`)
+  console.log(`📂 Reading RAR file: ${rarFilePath}`)
   const rarBuffer = readFileSync(rarFilePath)
   const rarData = new Uint8Array(rarBuffer)
 
-  // 写入虚拟文件系统
+  // Write to virtual file system
   const FS = unrar.FS
   const virtualPath = '/temp.rar'
   FS.writeFile(virtualPath, rarData)
 
-  console.log(`🔍 正在打开归档...`)
+  console.log(`🔍 Opening archive...`)
   const cmdData = new unrar.CommandData()
   const archive = new unrar.Archive(cmdData)
 
   if (!archive.openFile(virtualPath)) {
     FS.unlink(virtualPath)
-    throw new Error('无法打开 RAR 文件')
+    throw new Error('Cannot open RAR file')
   }
 
   if (!archive.isArchive(true)) {
     FS.unlink(virtualPath)
-    throw new Error('不是有效的 RAR 文件')
+    throw new Error('Not a valid RAR file')
   }
 
-  console.log(`✅ 归档验证成功，开始提取文件...\n`)
+  console.log(`✅ Archive validated successfully, extracting files...\n`)
   const files: ExtractedFile[] = []
 
   while (archive.readHeader() > 0) {
@@ -64,7 +64,7 @@ async function extractRarFile(rarFilePath: string, outputDir?: string): Promise<
       files.push({ name, size, isDirectory, data })
 
       if (isDirectory) {
-        console.log(`📁 ${name} (目录)`)
+        console.log(`📁 ${name} (Directory)`)
       } else {
         console.log(`📄 ${name} (${formatSize(size)})`)
       }
@@ -75,12 +75,12 @@ async function extractRarFile(rarFilePath: string, outputDir?: string): Promise<
     archive.seekToNext()
   }
 
-  // 清理虚拟文件
+  // Clean up virtual file
   FS.unlink(virtualPath)
 
-  // 如果指定了输出目录，保存文件
+  // Save files if output directory is specified
   if (outputDir && files.length > 0) {
-    console.log(`\n💾 正在保存文件到: ${outputDir}`)
+    console.log(`\n💾 Saving files to: ${outputDir}`)
     saveFiles(files, outputDir)
   }
 
@@ -88,7 +88,7 @@ async function extractRarFile(rarFilePath: string, outputDir?: string): Promise<
 }
 
 /**
- * 保存提取的文件到磁盘
+ * Save extracted files to disk
  */
 function saveFiles(files: ExtractedFile[], outputDir: string): void {
   if (!existsSync(outputDir)) {
@@ -103,19 +103,19 @@ function saveFiles(files: ExtractedFile[], outputDir: string): void {
       if (!existsSync(fileDir)) {
         mkdirSync(fileDir, { recursive: true })
       }
-      console.log(`  ✓ 创建目录: ${file.name}`)
+      console.log(`  ✓ Created directory: ${file.name}`)
     } else if (file.data) {
       if (!existsSync(fileDir)) {
         mkdirSync(fileDir, { recursive: true })
       }
       writeFileSync(filePath, file.data)
-      console.log(`  ✓ 保存文件: ${file.name}`)
+      console.log(`  ✓ Saved file: ${file.name}`)
     }
   }
 }
 
 /**
- * 格式化文件大小
+ * Format file size
  */
 function formatSize(bytes: number | bigint): string {
   const size = typeof bytes === 'bigint' ? Number(bytes) : bytes
@@ -126,44 +126,44 @@ function formatSize(bytes: number | bigint): string {
 }
 
 /**
- * 主函数
+ * Main function
  */
 async function main() {
   const args = process.argv.slice(2)
 
   if (args.length === 0) {
-    console.log('用法: npm start <rar文件路径> [输出目录]')
-    console.log('示例: npm start q.rar ./output')
+    console.log('Usage: npm start <rar-file-path> [output-directory]')
+    console.log('Example: npm start q.rar ./output')
     process.exit(1)
   }
 
   const rarFilePathArg = args[0]
   const outputDirArg = args[1] || './output'
 
-  // 解析 RAR 文件路径
-  // 如果是绝对路径，直接使用；否则尝试多个可能的路径
+  // Parse RAR file path
+  // If absolute path, use it directly; otherwise try multiple possible paths
   let rarFilePath: string
   if (isAbsolute(rarFilePathArg)) {
     rarFilePath = rarFilePathArg
   } else {
     const cwd = process.cwd()
-    // 先尝试相对于当前工作目录
+    // First try relative to current working directory
     rarFilePath = resolve(cwd, rarFilePathArg)
     
     if (!existsSync(rarFilePath)) {
-      // 如果路径包含 packages/，可能是从根目录传入的路径
-      // 尝试从项目根目录解析
+      // If path contains packages/, it might be passed from root directory
+      // Try to resolve from project root directory
       if (rarFilePathArg.includes('packages/') || rarFilePathArg.startsWith('../')) {
-        // 如果当前在 node-demo 目录，向上两级到根目录
+        // If currently in node-demo directory, go up two levels to root
         if (cwd.endsWith('node-demo')) {
           const projectRoot = resolve(cwd, '../..')
           rarFilePath = resolve(projectRoot, rarFilePathArg)
         } else if (cwd.endsWith('packages')) {
-          // 如果在 packages 目录，向上一级到根目录
+          // If in packages directory, go up one level to root
           const projectRoot = resolve(cwd, '..')
           rarFilePath = resolve(projectRoot, rarFilePathArg)
         } else {
-          // 其他情况，尝试从当前目录向上查找包含 packages 的目录
+          // In other cases, try to find directory containing packages upwards from current directory
           let currentDir = cwd
           while (currentDir !== dirname(currentDir)) {
             if (existsSync(resolve(currentDir, rarFilePathArg))) {
@@ -177,15 +177,15 @@ async function main() {
     }
   }
 
-  // 解析输出目录
+  // Parse output directory
   const outputDir = isAbsolute(outputDirArg) 
     ? outputDirArg 
     : resolve(process.cwd(), outputDirArg)
 
   if (!existsSync(rarFilePath)) {
-    console.error(`❌ 错误: 文件不存在: ${rarFilePath}`)
-    console.error(`   尝试的路径: ${rarFilePathArg}`)
-    console.error(`   当前工作目录: ${process.cwd()}`)
+    console.error(`❌ Error: File does not exist: ${rarFilePath}`)
+    console.error(`   Attempted path: ${rarFilePathArg}`)
+    console.error(`   Current working directory: ${process.cwd()}`)
     process.exit(1)
   }
 
@@ -196,18 +196,18 @@ async function main() {
     const files = await extractRarFile(rarFilePath, outputDir)
 
     console.log('='.repeat(50))
-    console.log(`\n✨ 提取完成!`)
-    console.log(`📊 总计: ${files.length} 个文件/目录`)
-    console.log(`📁 输出目录: ${outputDir}`)
+    console.log(`\n✨ Extraction complete!`)
+    console.log(`📊 Total: ${files.length} file(s)/directory(ies)`)
+    console.log(`📁 Output directory: ${outputDir}`)
   } catch (error) {
-    console.error('\n❌ 错误:', error instanceof Error ? error.message : String(error))
+    console.error('\n❌ Error:', error instanceof Error ? error.message : String(error))
     process.exit(1)
   }
 }
 
-// 运行主函数
+// Run main function
 main().catch((error) => {
-  console.error('未捕获的错误:', error)
+  console.error('Uncaught error:', error)
   process.exit(1)
 })
 
