@@ -1,1 +1,0 @@
-/home/runner/work/_temp/5da60300-1cc4-4de9-bf40-cf8a0119a61f/emsdk-main/upstream/emscripten/em++ --bind -s MODULARIZE=1 -s ALLOW_MEMORY_GROWTH=1 -s ENVIRONMENT=web,node -s NO_DISABLE_EXCEPTION_CATCHING -s FORCE_FILESYSTEM=1 -s EXPORTED_RUNTIME_METHODS=[FS] -s ASSERTIONS=1 @CMakeFiles/unrar.dir/objects1.rsp -o unrar.js
