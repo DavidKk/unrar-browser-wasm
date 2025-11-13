@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
 
 export default defineConfig({
-  base: '/unrar-browser-wasm/',
+  base: '/unrar-browser-wasm/vite-demo/',
   plugins: [react()],
   resolve: {
     alias: {
@@ -23,12 +23,12 @@ export default defineConfig({
     },
   },
 
-  publicDir: false,
+  publicDir: 'public',
   assetsInclude: ['**/*.wasm'],
 
   build: {
     outDir: 'dist',
-    copyPublicDir: false,
+    copyPublicDir: true,
     rollupOptions: {
       output: {
         manualChunks: undefined,

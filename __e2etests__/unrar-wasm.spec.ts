@@ -32,7 +32,7 @@ test.describe('UnRAR WASM Browser Tests', () => {
     })
 
     // Visit demo page
-    await page.goto('http://localhost:3000')
+    await page.goto('http://localhost:3000/unrar-browser-wasm/e2e-demo/')
 
     // Wait for module status
     const moduleStatus = page.locator('#moduleStatus')
@@ -60,7 +60,7 @@ test.describe('UnRAR WASM Browser Tests', () => {
     })
 
     // Visit demo page (will auto-load and extract)
-    await page.goto('http://localhost:3000')
+    await page.goto('http://localhost:3000/unrar-browser-wasm/e2e-demo/')
 
     // Wait for module to load
     await page.waitForSelector('#moduleStatus:has-text("loaded successfully")', {
@@ -142,7 +142,7 @@ test.describe('UnRAR WASM Browser Tests', () => {
   })
 
   test('should display file name correctly', async ({ page }) => {
-    await page.goto('http://localhost:3000')
+    await page.goto('http://localhost:3000/unrar-browser-wasm/e2e-demo/')
 
     // Wait for extraction
     await page.waitForSelector('#moduleStatus:has-text("loaded successfully")', { timeout: 30000 })

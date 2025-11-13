@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
-export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/unrar-browser-wasm/e2e-demo/' : '/',
+export default defineConfig(() => ({
+  base: '/unrar-browser-wasm/e2e-demo/',
   resolve: {
     alias: {
       '@unrar-browser/core': resolve(import.meta.dirname, '../unrar-wasm/src/index.ts'),
